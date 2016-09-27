@@ -1,0 +1,47 @@
+/* carousel-index
+================================================================================*/
+.carousel-index {
+  width: 100%;
+  background: #f0f0f3;
+  height: 400px;
+}
+
+.carousel {
+    &__item {
+      position: relative;
+      overflow: hidden;
+      height: 400px;
+    }
+    &__inner {
+      top: 80px;
+      right: 50px;
+      width: 410px;
+      position: absolute;
+    }
+    &__name {
+      color: #222;
+      font-family: @font-playfair;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+    &__title {
+      color: #222;
+      font-family: @font-playfair;
+      font-size: 36px;
+      font-weight: 600;
+      letter-spacing: 2.06px;
+      line-height: 1;
+      text-transform: uppercase;
+      span {
+        font-style: italic;
+      }
+    }
+    &__description {
+      color: #222;
+      font-size: 12px;
+      line-height: 2;
+    }
+}
