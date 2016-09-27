@@ -536,15 +536,16 @@ nav {
 }
 .carousel__title {
   color: #222;
-  font-family: 'Playfair Display', serif;
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 2.06px;
   line-height: 1;
   text-transform: uppercase;
 }
 .carousel__title span {
+  font-family: 'Playfair Display', serif;
   font-style: italic;
+  font-weight: 600;
 }
 .carousel__description {
   color: #222;
