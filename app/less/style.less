@@ -1,0 +1,32 @@
+@import "base";
+
+#wrapper {
+	min-height: calc(~ "100vh - 310px" );
+}
+.footer {
+	height: 310px;
+	background: #333;
+}
+
+.left {
+	float: left;
+}
+.right {
+	float:right;
+}
+a {
+	transition: color .3s;
+	&:hover {
+		color: @color-hover;
+	}
+}
+
+/* Include Style
+================================================================================*/
+
+@import "_header";
+@import "_footer";
+@import "_carousel";
+
+/* @MEDIA */
+@import "media";
