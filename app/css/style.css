@@ -445,9 +445,117 @@ input[type="text"]:focus:-ms-input-placeholder {
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
 }
+/* Menu nav
+================================================================================*/
 nav {
   width: 100%;
   height: 30px;
+}
+nav .left {
+  width: -webkit-calc(100% - 360px);
+  width: calc(100% - 360px);
+}
+.menu-sub,
+.menu-sub2 {
+  display: none;
+}
+.menu {
+  zoom: 1;
+}
+.menu:before,
+.menu:after {
+  content: "";
+  display: table;
+}
+.menu:after {
+  clear: both;
+}
+.menu__item {
+  float: left;
+  position: relative;
+  height: 30px;
+}
+.menu__item:hover .menu-sub {
+  display: block;
+}
+.menu__title {
+  position: relative;
+  height: 30px;
+  display: inline-block;
+  padding: 0 56px 0 37px;
+  color: #222;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  line-height: 30px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.menu__title.active {
+  background: #a6a;
+  color: #fff;
+}
+.menu__title.active span:after {
+  background-position: 0 -5px;
+}
+.menu__title:hover {
+  background: #a6a;
+  color: #fff;
+}
+.menu__title:hover span:after {
+  background-position: 0 -5px;
+}
+.menu__title span {
+  position: relative;
+}
+.menu__title span:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 5px;
+  background: url(../images/arrow-menu.png) no-repeat;
+  top: 4px;
+  right: -20px;
+}
+.menu-sub {
+  background: #fff;
+  position: absolute;
+  min-width: 100%;
+  top: 30px;
+  padding: 10px 0;
+  border: 1px solid #efefef;
+}
+.menu-sub__item {
+  position: relative;
+}
+.menu-sub__item:hover .menu-sub2 {
+  display: block;
+}
+.menu-sub2 {
+  background: #fff;
+  position: absolute;
+  min-width: 100%;
+  top: -11px;
+  left: 100%;
+  padding: 10px 0;
+  border: 1px solid #efefef;
+}
+.menu__link {
+  white-space: nowrap;
+  display: block;
+  padding-left: 37px;
+  padding-right: 47px;
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  color: #222;
+  text-transform: uppercase;
+}
+.menu__link.active {
+  color: #a6a;
 }
 .footer {
   padding-top: 42px;

@@ -1,4 +1,112 @@
+/* Menu nav
+================================================================================*/
 nav {
   width: 100%;
   height: 30px;
+}
+nav {
+  .left {
+    width: calc(~"100% - 360px");
+  }
+}
+.menu-sub, .menu-sub2 {
+  display: none;
+}
+.menu {
+  .cf;
+    &__item {
+      float: left;
+      position: relative;
+      height: 30px;
+      &:hover {
+        .menu-sub {
+          display: block;
+        }
+      }
+    }
+    &__title {
+      position: relative;
+      height: 30px;
+      display: inline-block;
+      padding: 0 56px 0 37px;
+      color: #222;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1px;
+      line-height: 30px;
+      text-transform: uppercase;
+      transition: all 0.3s;
+      &.active {
+        background: #a6a;
+        color: #fff;
+        span {
+          &:after {
+            background-position: 0 -5px;
+          }
+        }
+      }
+      &:hover {
+        background: #a6a;
+        color: #fff;
+        span {
+          &:after {
+            background-position: 0 -5px;
+          }
+        }
+      }
+        span {
+          position: relative;
+          &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 8px;
+            height: 5px;
+            background: url(../images/arrow-menu.png) no-repeat;
+            top: 4px;
+            right: -20px;
+          }
+        }
+    }
+}
+.menu-sub {
+  background: #fff;
+  position: absolute;
+  min-width: 100%;
+  top: 30px;
+  padding: 10px 0;
+  border: 1px solid #efefef;
+  &__item {
+    position: relative;
+    &:hover {
+      .menu-sub2 {
+        display: block;
+      }
+    }
+  }
+}
+.menu-sub2 {
+  background: #fff;
+  position: absolute;
+  min-width: 100%;
+  top: -11px;
+  left: 100%;
+  padding: 10px 0;
+  border: 1px solid #efefef;
+}
+
+.menu__link {
+  white-space: nowrap;
+  display: block;
+  padding-left: 37px;
+  padding-right: 47px;
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  color: #222;
+  text-transform: uppercase;
+  &.active {
+    color: #a6a;
+  }
 }

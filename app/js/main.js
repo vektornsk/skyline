@@ -20,6 +20,24 @@ $(function() {
 	  autoplaySpeed: 2000,
 	});
 
+/* hover menu*/
+$('.menu-sub').hover (
+	function () {
+		$(this).closest('.menu__item').find('.menu__title').addClass('active');
+	},
+	function () {
+		$(this).closest('.menu__item').find('.menu__title').removeClass('active');
+	}
+);
+$('.menu-sub2').hover (
+	function () {
+		$(this).closest('.menu-sub__item').children().addClass('active');
+	},
+	function () {
+		$(this).closest('.menu-sub__item').children().removeClass('active');
+	}
+);
+
 
 
 });
