@@ -785,4 +785,22 @@ nav {
   display: block;
   object-fit: cover;
 }
+/* brands-index
+================================================================================*/
+.brands-wrap {
+  margin-bottom: 35px;
+}
+.brand__box {
+  display: block;
+  width: 175px;
+  height: 175px;
+}
+.brand__box:hover {
+  opacity: 0.2;
+}
+.brand__img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 /* @MEDIA */

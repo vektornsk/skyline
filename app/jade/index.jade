@@ -1,6 +1,7 @@
 extends ./tmp/_template.jade
 include ./tmp/_carousel.jade
 include ./tmp/_info-box.jade
+include ./tmp/_brands.jade
 
 block title
 	title Главная
@@ -57,4 +58,5 @@ block content
 					.card-index__block						
 						.card-index__category.card-index__category_font Новое поступление
 						.card-index__tip Привлекательные цены
+	+brands
 block hidden
