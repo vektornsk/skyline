@@ -136,6 +136,9 @@ input[type="search"]::-webkit-search-decoration {
   min-height: -webkit-calc(100vh - 310px);
   min-height: calc(100vh - 310px);
 }
+.wrap-top {
+  padding-top: 163px;
+}
 .footer {
   height: 310px;
   background: #333;
@@ -179,8 +182,30 @@ a:hover {
   -webkit-border-radius: 100%;
   border-radius: 100%;
 }
+/* input
+================================================================================*/
+input[type="text"]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input[type="text"]:focus::-moz-placeholder {
+  color: transparent;
+}
+input[type="text"]:focus:-moz-placeholder {
+  color: transparent;
+}
+input[type="text"]:focus:-ms-input-placeholder {
+  color: transparent;
+}
 /* Include Style
 ================================================================================*/
+/* header
+================================================================================*/
+.header {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 10;
+}
 .header-wrap {
   zoom: 1;
 }
@@ -537,7 +562,6 @@ nav {
 ================================================================================*/
 .carousel-index {
   width: 100%;
-  background: #f0f0f3;
   height: 400px;
 }
 .carousel__item {
@@ -592,11 +616,11 @@ nav {
 ================================================================================*/
 .info-box-wrap {
   width: 100%;
-  background: #eff;
-  height: 60px;
-  padding-top: 26px;
 }
 .info-box {
+  padding-top: 26px;
+  height: 60px;
+  background: #eff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -770,14 +794,14 @@ nav {
   width: 100%;
   text-align: center;
   left: 0;
-  top: 38px;
+  top: 35px;
   font-family: 'Playfair Display', serif;
   color: #fff;
   font-size: 36px;
   font-weight: 700;
   font-style: italic;
   letter-spacing: 0.3px;
-  line-height: 1;
+  line-height: 1.3;
 }
 .card-index__img {
   width: 100%;
@@ -794,6 +818,7 @@ nav {
   display: block;
   width: 175px;
   height: 175px;
+  text-align: center;
 }
 .brand__box:hover {
   opacity: 0.2;
@@ -802,5 +827,65 @@ nav {
   width: 100%;
   height: auto;
   display: block;
+}
+/* search -nav
+================================================================================*/
+.search-wrap {
+  zoom: 1;
+  width: 360px;
+  height: 30px;
+  background: #f7f7f7;
+  overflow: hidden;
+}
+.search-wrap:before,
+.search-wrap:after {
+  content: "";
+  display: table;
+}
+.search-wrap:after {
+  clear: both;
+}
+.search {
+  float: left;
+  width: 300px;
+  height: 30px;
+  border: none;
+  background: #f7f7f7;
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.search-btn-wrap {
+  float: left;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin-left: 24px;
+}
+.search-btn-wrap:hover .search-ico path {
+  fill: #ecaa2d;
+}
+.search-ico {
+  position: absolute;
+  width: 17px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.search-ico path {
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+.search-btn {
+  margin-left: 0px;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  position: relative;
+  z-index: 1;
 }
 /* @MEDIA */

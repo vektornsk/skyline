@@ -3,6 +3,9 @@
 #wrapper {
 	min-height: calc(~ "100vh - 310px" );
 }
+.wrap-top {
+	padding-top: 163px;
+}
 .footer {
 	height: 310px;
 	background: #333;
@@ -50,6 +53,14 @@ a {
 		}
 	}
 }
+/* input
+================================================================================*/
+input[type="text"] {
+	&:focus::-webkit-input-placeholder {color: transparent}
+	&:focus::-moz-placeholder          {color: transparent}
+	&:focus:-moz-placeholder           {color: transparent}
+	&:focus:-ms-input-placeholder      {color: transparent}
+}
 
 
 /* Include Style
@@ -62,6 +73,7 @@ a {
 @import "_info-box";
 @import "_card-index";
 @import "_brands-index";
+@import "_search";
 
 /* @MEDIA */
 @import "media";
