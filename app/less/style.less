@@ -21,6 +21,37 @@ a {
 	}
 }
 
+/* styly slick dots */
+.carousel-index {
+	.slick-dots {
+		position: absolute;
+		left: 350px;
+		top: 320px;
+		width: 100%;
+	}
+}
+.slick-dots {
+	text-align: center;
+	li {
+		display: inline-block;
+		margin: 0 5px;
+		&.slick-active {
+			button {
+				background: #a6a;
+			}
+		}
+		button {
+			border: none;
+			background: #bfbfbf;
+			width: 10px;
+			height: 10px;
+			font-size: 0;
+			border-radius: 100%;
+		}
+	}
+}
+
+
 /* Include Style
 ================================================================================*/
 
@@ -28,6 +59,8 @@ a {
 @import "_nav";
 @import "_footer";
 @import "_carousel";
+@import "_info-box";
+@import "_card-index";
 
 /* @MEDIA */
 @import "media";

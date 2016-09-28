@@ -1,9 +1,60 @@
 extends ./tmp/_template.jade
 include ./tmp/_carousel.jade
+include ./tmp/_info-box.jade
 
 block title
 	title Главная
 block content
 	+carousel
+	+info-box		
 	.container
+		.card-index-layout 
+			.card-index__row_one
+				a.card-index(href="#")
+					img.card-index__img(src="/images/legs-1.png", alt="")
+					.card-index__title.card-index__title_yellow Хит продаж
+					.card-index__block.card-index__block_black
+						.card-index__name Классические колготки
+						.card-index__category Выбор покупателей
+						.card-index__tip Новинки
+				a.card-index(href="#")
+					img.card-index__img(src="/images/legs-2.png", alt="")
+					.card-index__title.card-index__title_pink Выбор покупателей
+					.card-index__block.card-index__block_black
+						.card-index__name Корсетное Белье
+						.card-index__category Новая коллекция
+						.card-index__tip На любой вкус
+				a.card-index(href="#")
+					img.card-index__img(src="/images/legs-3.png", alt="")
+					.card-index__title.card-index__title_green Бестселлер
+					.card-index__block.card-index__block_black
+						.card-index__name Трикотаж
+						.card-index__category Новая коллекция
+						.card-index__tip Ведущие бренды
+				a.card-index(href="#")
+					img.card-index__img(src="/images/conit.png", alt="")
+					.card-index__label Conit
+					.card-index__block						
+						.card-index__category.card-index__category_font Новое поступление
+						.card-index__tip Привлекательные цены
+			.card-index__row_two
+				a.card-index.card-index_big(href="#")
+					img.card-index__img(src="/images/legs.png", alt="")
+					.card-index__title.card-index__title_yellow Распродажа
+					.card-index__block.card-index__block_black
+						.card-index__name Большая распродажа женского белья
+						.card-index__category Время акции строго ограничено!
+						.card-index__tip успей оформить заказ со скидкой
+				a.card-index(href="#")
+					img.card-index__img(src="/images/fildoro.png", alt="")
+					.card-index__label Filodoro
+					.card-index__block						
+						.card-index__category.card-index__category_font Новое поступление
+						.card-index__tip Привлекательные цены
+				a.card-index(href="#")
+					img.card-index__img(src="/images/golden-lady.png", alt="")
+					.card-index__label Golden Lady
+					.card-index__block						
+						.card-index__category.card-index__category_font Новое поступление
+						.card-index__tip Привлекательные цены
 block hidden

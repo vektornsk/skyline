@@ -1,0 +1,57 @@
+/* info-box
+================================================================================*/
+.info-box-wrap {
+  width: 100%;
+  background: #eff;
+  height: 60px;
+  padding-top: 26px;
+}
+.info-box {
+  display: flex;
+  justify-content: space-around;
+  &__item {
+    position: relative;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.1px;
+    color: #333;
+    text-transform: uppercase;
+    &_car {
+      &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 14px;
+        height: 11px;
+        top: 0px;
+        left: -25px;
+        background: url(../images/svg/car.svg) no-repeat;
+      }
+    }
+    &_rocket {
+      &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 16px;
+        height: 14px;
+        top: -2px;
+        left: -25px;
+        background: url(../images/svg/rocket.svg) no-repeat;
+      }
+    }
+    &_gift {
+        &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 14px;
+        height: 12px;
+        top: -2px;
+        left: -25px;
+        background: url(../images/svg/gift.svg) no-repeat;
+      }
+    }
+  }
+}
