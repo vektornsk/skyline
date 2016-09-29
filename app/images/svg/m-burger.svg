@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Avocode 0.4.0 - http://avocode.com -->
+<svg height="17" width="21" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 17">
+    <path fill="none" fill-rule="evenodd" d="M 20.66 0.34 L 0 0.34 L 0 3.42 L 20.66 3.42 L 20.66 0.34 L 20.66 0.34 Z M 20.66 0.34" />
+    <path fill="#fefefe" fill-rule="evenodd" d="M 19.12 3.42 L 1.54 3.42 C 0.69 3.42 0 2.73 0 1.88 L 0 1.88 C 0 1.03 0.69 0.34 1.54 0.34 L 19.12 0.34 C 19.97 0.34 20.66 1.03 20.66 1.88 L 20.66 1.88 C 20.66 2.73 19.97 3.42 19.12 3.42" />
+    <path fill="none" fill-rule="evenodd" d="M 0 6.69 L 0 9.76 L 20.66 9.76 L 20.66 6.69 L 0 6.69 L 0 6.69 Z M 0 6.69" />
+    <path fill="#fefefe" fill-rule="evenodd" d="M 19.12 9.76 L 1.54 9.76 C 0.69 9.76 0 9.07 0 8.22 L 0 8.22 C 0 7.37 0.69 6.69 1.54 6.69 L 19.12 6.69 C 19.97 6.69 20.66 7.37 20.66 8.22 L 20.66 8.22 C 20.66 9.07 19.97 9.76 19.12 9.76" />
+    <path fill="none" fill-rule="evenodd" d="M 10.33 16.1 L 0 16.1 L 0 13.03 L 20.66 13.03 L 20.66 16.1 L 10.33 16.1 L 10.33 16.1 Z M 10.33 16.1" />
+    <path fill="#fefefe" fill-rule="evenodd" d="M 19.12 16.1 L 1.54 16.1 C 0.69 16.1 0 15.42 0 14.57 L 0 14.57 C 0 13.72 0.69 13.03 1.54 13.03 L 19.12 13.03 C 19.97 13.03 20.66 13.72 20.66 14.57 L 20.66 14.57 C 20.66 15.42 19.97 16.1 19.12 16.1" />
+</svg>

@@ -17,6 +17,9 @@
   background: #222;
   height: 58px;
   padding-top: 18px;
+    .container {
+      position: relative;
+    }
 }
 
 /* location */
@@ -86,10 +89,23 @@
     }
   }
 }
+.m-burger {
+  display: none;
+}
+.m-search {
+  display: none;
+  height: 16px;
+}
+.m-cart {
+  display: none;
+  height: 16px;
+}
 .liked {
   position: relative;
   color: #fff;
   padding-left: 27px;
+  height: 16px;
+  display: block;
   &:hover {
     .like-ico path {
       fill: @color-hover;
@@ -111,6 +127,7 @@
   padding-left: 27px;
   transition: color .3s;
   cursor: pointer;
+  height: 16px;
   &:hover {
     color: @color-hover;
     .lk-ico path{

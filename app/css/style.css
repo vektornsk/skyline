@@ -288,6 +288,9 @@ input[type="text"]:focus:-ms-input-placeholder {
   height: 58px;
   padding-top: 18px;
 }
+.header-top .container {
+  position: relative;
+}
 /* location */
 .location li {
   display: inline-block;
@@ -350,10 +353,23 @@ input[type="text"]:focus:-ms-input-placeholder {
 .menu-top li .liked {
   margin-right: 34px;
 }
+.m-burger {
+  display: none;
+}
+.m-search {
+  display: none;
+  height: 16px;
+}
+.m-cart {
+  display: none;
+  height: 16px;
+}
 .liked {
   position: relative;
   color: #fff;
   padding-left: 27px;
+  height: 16px;
+  display: block;
 }
 .liked:hover .like-ico path {
   fill: #ecaa2d;
@@ -375,6 +391,7 @@ input[type="text"]:focus:-ms-input-placeholder {
   -webkit-transition: color .3s;
   transition: color .3s;
   cursor: pointer;
+  height: 16px;
 }
 .lk:hover {
   color: #ecaa2d;
@@ -521,6 +538,9 @@ nav {
   width: 100%;
   height: 30px;
 }
+nav .container {
+  position: relative;
+}
 nav .left {
   width: -webkit-calc(100% - 360px);
   width: calc(100% - 360px);
@@ -626,6 +646,26 @@ nav .left {
 }
 .menu__link.active {
   color: #a6a;
+}
+.m-menu {
+  color: #fff;
+  display: none;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  line-height: 1;
+  margin-bottom: 30px;
 }
 /* popup-menu
 ================================================================================*/
@@ -1315,9 +1355,104 @@ nav .left {
   margin-bottom: 28px;
 }
 /* @MEDIA */
-/*                           992-1230 index
+/*                           768-991 index
 ================================================================================*/
-/* header
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /*header-top*/
+  .location {
+    display: none;
+  }
+  .menu-top li {
+    height: 16px;
+    overflow: hidden;
+    margin-left: 25px;
+  }
+  .menu-top li span {
+    display: none;
+  }
+  .m-burger {
+    display: block;
+  }
+  .m-search {
+    display: block;
+  }
+  .m-cart {
+    display: block;
+  }
+  .menu-top li .liked {
+    margin-right: 0;
+  }
+  .liked {
+    padding-left: 16px;
+  }
+  .liked .like-ico {
+    top: 0;
+  }
+  .lk {
+    padding-left: 16px;
+  }
+  .lk .lk-ico {
+    top: 0;
+  }
+  /*header-main*/
+  .logo-wrap {
+    width: 360px;
+    margin-right: 0;
+  }
+  .cart-wrap {
+    display: none;
+  }
+  .search-wrap {
+    display: none;
+    position: absolute;
+    top: 58px;
+    right: 0;
+    border: 1px solid #efefef;
+  }
+  /*nav*/
+  .menu-wrap {
+    position: absolute;
+    width: 320px;
+    height: 100vh;
+    overflow: hidden;
+    background: #222;
+    left: 0;
+    top: -75px;
+  }
+  .menu__item {
+    float: none;
+  }
+  .menu__title {
+    color: #fff;
+    font-weight: 400;
+    padding-left: 20px;
+  }
+  .m-menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  /*corousel index*/
+  /*info-box*/
+  .info-box {
+    display: none;
+  }
+  /*card-index*/
+  .card-index {
+    margin-right: 9px;
+    height: 224px;
+    margin-bottom: 15px;
+  }
+  .card-index__title {
+    top: 13px;
+    padding: 3px 15px;
+  }
+  .card-index__name {
+    font-size: 12px;
+  }
+}
+/*                           992-1230 index
 ================================================================================*/
 @media screen and (min-width: 992px) and (max-width: 1230px) {
   /*header-top*/

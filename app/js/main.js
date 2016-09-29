@@ -26,17 +26,15 @@ $(function() {
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 991,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 4,
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 767,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
       }
     }
 	]
@@ -100,6 +98,11 @@ $('.btn-close-popup').on('click', function(){
 	$('.popup-login').hide(300);
 	$('.popup-cart').hide(300);
 	$('.bg-layout').hide();
+});
+
+/*mobil search*/
+$('.m-search').on('click', function(){
+	$('.search-wrap').show(300);
 });
 
 });
