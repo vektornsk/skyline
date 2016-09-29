@@ -402,22 +402,28 @@ input[type="text"]:focus:-ms-input-placeholder {
 .logo-wrap {
   float: left;
   padding-top: 18px;
+  margin-right: 30px;
 }
 .logo-wrap span {
   font-size: 12px;
-  line-height: 1;
+  line-height: 1.3;
   letter-spacing: 0.1px;
   font-weight: 400;
   color: #222;
   text-transform: uppercase;
-  margin: 0 30px;
+  margin-left: 30px;
+  width: -webkit-calc(100% - 190px);
+  width: calc(100% - 190px);
+  display: inline-block;
 }
 .logo {
   display: inline-block;
+  width: 160px;
 }
 .banner-wrap {
   float: left;
   padding-top: 14px;
+  overflow: hidden;
 }
 .banner {
   display: inline-block;
@@ -943,6 +949,7 @@ nav .left {
   height: 400px;
 }
 .carousel__img {
+  height: auto;
   width: 100%;
   object-fit: cover;
 }
@@ -1009,6 +1016,7 @@ nav .left {
   line-height: 1;
   letter-spacing: 0.1px;
   color: #333;
+  padding-left: 25px;
   text-transform: uppercase;
 }
 .info-box__item_car:before {
@@ -1018,7 +1026,7 @@ nav .left {
   width: 14px;
   height: 11px;
   top: 0px;
-  left: -25px;
+  left: 0px;
   background: url(../images/svg/car.svg) no-repeat;
 }
 .info-box__item_rocket:before {
@@ -1028,7 +1036,7 @@ nav .left {
   width: 16px;
   height: 14px;
   top: -2px;
-  left: -25px;
+  left: 0px;
   background: url(../images/svg/rocket.svg) no-repeat;
 }
 .info-box__item_gift:before {
@@ -1038,7 +1046,7 @@ nav .left {
   width: 14px;
   height: 12px;
   top: -2px;
-  left: -25px;
+  left: 0px;
   background: url(../images/svg/gift.svg) no-repeat;
 }
 /* card index
@@ -1307,3 +1315,59 @@ nav .left {
   margin-bottom: 28px;
 }
 /* @MEDIA */
+/*                           992-1230 index
+================================================================================*/
+/* header
+================================================================================*/
+@media screen and (min-width: 992px) and (max-width: 1230px) {
+  /*header-top*/
+  .location li .city {
+    margin-right: 28px;
+  }
+  .location li .tel {
+    margin-right: 31px;
+  }
+  /*header-main*/
+  .logo-wrap {
+    width: 320px;
+    margin-right: 0;
+  }
+  .logo-wrap span {
+    margin-left: 15px;
+  }
+  .cart-wrap {
+    width: 240px;
+  }
+  /*nav*/
+  .menu-wrap {
+    width: 640px;
+  }
+  /*search*/
+  .search-wrap {
+    width: 290px;
+  }
+  .search {
+    width: 260px !important;
+  }
+  .search-btn-wrap {
+    margin-left: 0;
+  }
+  /*carousel-index*/
+  .carousel-index {
+    height: 350px;
+  }
+  .carousel-index .slick-dots {
+    left: 220px;
+    top: 300px;
+  }
+  /*info-box*/
+  .info-box__item {
+    font-size: 11px;
+  }
+  /*cart-index*/
+  .card-index {
+    height: 285px;
+    margin-right: 12px;
+  }
+}
+/* end 920-1230*/

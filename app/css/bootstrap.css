@@ -10,6 +10,7 @@
   margin-left: auto;
   padding-left: 38px;
   padding-right: 38px;
+  transition: width 0.5s;
 }
 @media (min-width: 768px) {
   .container {
@@ -19,8 +20,8 @@
 @media (min-width: 992px) {
   .container {
     width: 970px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media (min-width: 1230px) {
@@ -28,6 +29,12 @@
     width: 1200px;
     padding-left: 38px;
     padding-right: 38px;
+  }
+}
+@media (min-width: 992px) {
+  .row {
+    margin-left: -20px;
+    margin-right: -20px;
   }
 }
 @media (min-width: 1230px) {
