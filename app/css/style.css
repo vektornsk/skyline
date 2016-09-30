@@ -160,8 +160,6 @@ input[type="search"]::-webkit-search-decoration {
 }
 .content-top {
   zoom: 1;
-  padding-top: 70px;
-  padding-bottom: 25px;
 }
 .content-top:before,
 .content-top:after {
@@ -171,8 +169,49 @@ input[type="search"]::-webkit-search-decoration {
 .content-top:after {
   clear: both;
 }
-.content-bottom {
-  height: 100px;
+@media (min-width: 320px) {
+  .content-top {
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+}
+@media (min-width: 768px) {
+  .content-top {
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
+}
+@media (min-width: 992px) {
+  .content-top {
+    padding-top: 70px;
+    padding-bottom: 25px;
+  }
+}
+@media (min-width: 1230px) {
+  .content-top {
+    padding-top: 70px;
+    padding-bottom: 25px;
+  }
+}
+@media (min-width: 320px) {
+  .content-bottom {
+    height: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .content-bottom {
+    height: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .content-bottom {
+    height: 70px;
+  }
+}
+@media (min-width: 1230px) {
+  .content-bottom {
+    height: 100px;
+  }
 }
 .left {
   float: left;
@@ -196,6 +235,13 @@ h1,
   line-height: 1;
   text-transform: uppercase;
   margin-bottom: 35px;
+}
+@media (max-width: 320px) and (max-width: 767px) {
+  h1,
+  .h1 {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
 }
 /* styly slick dots */
 .carousel-index .slick-dots {
@@ -1761,6 +1807,10 @@ nav .left {
   .footer-wrap .right {
     float: none;
   }
+  /* CONTENT */
+  .content-top > * {
+    display: none;
+  }
 }
 /* 320-767*/
 /*                           480-768
@@ -1866,5 +1916,33 @@ nav .left {
   .menu-wrap {
     width: 640px;
     display: block !important;
+  }
+}
+/* media page news
+================================================================================*/
+@media (min-width: 320px) and (max-width: 767px) {
+  .news {
+    width: 100%;
+    margin-right: 0;
+  }
+  .news__img {
+    height: 160px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .news {
+    width: 48.5%;
+    margin-right: 20px;
+  }
+  .news:nth-child(2n) {
+    margin-right: 0px;
+  }
+  .news:nth-child(3n) {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1229px) {
+  .news {
+    width: 32.2%;
   }
 }
