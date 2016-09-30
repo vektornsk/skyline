@@ -1,0 +1,40 @@
+/* bread-crumbs
+================================================================================*/
+.bread-crumbs {
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__link {
+    color: #222;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-right: 38px;
+    transition: color 0.3s;
+    position: relative;
+    &:hover {
+      color: @color-hover;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 8px;
+      background: url(../images/svg/arrow-bread.svg) no-repeat;
+      right: -24px;
+      top: 2px;
+    }
+    &_last {
+      font-weight: 400;
+      &:hover {
+        color: #222;
+      }
+      &::after {
+        content: none;
+      }
+    }
+  }
+}
