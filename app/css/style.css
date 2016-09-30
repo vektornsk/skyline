@@ -1430,6 +1430,9 @@ nav .left {
   .search-btn-wrap {
     margin-left: 0;
   }
+  .popup-login {
+    top: -75px;
+  }
   /*nav*/
   nav {
     height: auto;
