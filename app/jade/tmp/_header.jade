@@ -47,7 +47,8 @@ mixin header()
 							div.cart-size(value="4") 4
 		nav
 			.container
-				.header-wrap
+				.row
+					.header-wrap
 					.left
 						.menu-wrap
 							ul.m-menu
@@ -175,8 +176,7 @@ mixin header()
 									li
 										.tel +7 (383) 362-06-84
 					.right
-						.row
-							.search-wrap(tabindex='1')
+						.search-wrap
 								form
 									input#search.search(type="text", placeholder="Найти на сайте")
 									.search-btn-wrap
