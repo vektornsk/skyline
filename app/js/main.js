@@ -92,12 +92,20 @@ $('.cart-info').on('click', function(){
 $('.bg-layout').on('click', function(){
 	$('.popup-login').hide(300);
 	$('.popup-cart').hide(300);
+	$('.menu-wrap').hide(300);
 	$('.bg-layout').hide();
 });
 $('.btn-close-popup').on('click', function(){
 	$('.popup-login').hide(300);
 	$('.popup-cart').hide(300);
+	$('.menu-wrap').hide(300);
 	$('.bg-layout').hide();
+});
+
+/* menu mobil*/
+$('.m-burger').on('click', function(){
+	$('.bg-layout').show();
+	$('.menu-wrap').show(300);
 });
 
 /*mobil search*/

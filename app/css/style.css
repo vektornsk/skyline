@@ -667,6 +667,21 @@ nav .left {
   line-height: 1;
   margin-bottom: 30px;
 }
+.m-loc {
+  display: none;
+  position: absolute;
+  left: 20px;
+  bottom: 60px;
+  border-top: 1px solid #fff;
+  width: 86%;
+  padding-top: 20px;
+}
+.m-loc .location {
+  display: block;
+}
+.m-loc .location li {
+  margin-bottom: 20px;
+}
 /* popup-menu
 ================================================================================*/
 .popup-menu-wrap .container {
@@ -687,18 +702,18 @@ nav .left {
 .btn-close-popup {
   padding: 3px;
   position: absolute;
-  top: -5px;
+  top: -4px;
   right: 5px;
   cursor: pointer;
 }
-.btn-close-popup:hover .btn-del-ico path {
+.btn-close-popup:hover .btn-close-popup-ico path {
   fill: #ecaa2d;
 }
-.btn-close-popup .btn-del-ico {
-  width: 10px;
-  height: 10px;
+.btn-close-popup .btn-close-popup-ico {
+  width: 15px;
+  height: 15px;
 }
-.btn-close-popup .btn-del-ico path {
+.btn-close-popup .btn-close-popup-ico path {
   -webkit-transition: fill 0.3s;
   transition: fill 0.3s;
 }
@@ -989,7 +1004,7 @@ nav .left {
   height: 400px;
 }
 .carousel__img {
-  height: auto;
+  height: 400px;
   width: 100%;
   object-fit: cover;
 }
@@ -1256,7 +1271,6 @@ nav .left {
   width: 360px;
   height: 30px;
   background: #f7f7f7;
-  overflow: hidden;
 }
 .search-wrap:before,
 .search-wrap:after {
@@ -1403,14 +1417,25 @@ nav .left {
     display: none;
   }
   .search-wrap {
-    display: none;
     position: absolute;
-    top: 58px;
+    top: 0px;
     right: 0;
     border: 1px solid #efefef;
+    width: 300px;
+    display: none;
+  }
+  .search {
+    width: 262px !important;
+  }
+  .search-btn-wrap {
+    margin-left: 0;
   }
   /*nav*/
+  nav {
+    height: auto;
+  }
   .menu-wrap {
+    display: none;
     position: absolute;
     width: 320px;
     height: 100vh;
@@ -1421,6 +1446,7 @@ nav .left {
   }
   .menu__item {
     float: none;
+    margin: 10px 0;
   }
   .menu__title {
     color: #fff;
@@ -1433,7 +1459,26 @@ nav .left {
     display: -ms-flexbox;
     display: flex;
   }
+  .m-loc {
+    display: block;
+  }
   /*corousel index*/
+  .carousel-index {
+    height: 300px;
+  }
+  .carousel__img {
+    height: 300px;
+    object-fit: cover;
+  }
+  .carousel__inner {
+    top: 45px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.6);
+  }
+  .carousel-index .slick-dots {
+    top: 270px;
+    left: auto;
+  }
   /*info-box*/
   .info-box {
     display: none;
