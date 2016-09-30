@@ -1585,6 +1585,17 @@ nav .left {
   object-fit: cover;
   margin-bottom: 30px;
 }
+/* btn-in-catalog*/
+.btn-in-catalog {
+  text-align: center;
+}
+.btn-in-catalog__text {
+  text-transform: uppercase;
+  margin-bottom: -10px;
+}
+.btn-in-catalog .btn {
+  padding: 0 70px;
+}
 /* @MEDIA */
 /*                           320-991 index
 ================================================================================*/
