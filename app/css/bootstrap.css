@@ -12,6 +12,13 @@
   padding-right: 38px;
   transition: width 0.5s;
 }
+@media (min-width: 320px) {
+  .container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 @media (min-width: 768px) {
   .container {
     width: 768px;

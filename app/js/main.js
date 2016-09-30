@@ -35,6 +35,7 @@ $(function() {
       breakpoint: 767,
       settings: {
         slidesToShow: 1,
+				autoplay: false
       }
     }
 	]
