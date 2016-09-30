@@ -28,7 +28,11 @@ body {
   color: #222;
 }
 p {
-  margin-bottom: 36px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
 li {
   list-style: none;
@@ -232,7 +236,7 @@ h1,
   color: #83a25c;
   font-size: 36px;
   letter-spacing: 0.3px;
-  line-height: 1;
+  line-height: 1.3;
   text-transform: uppercase;
   margin-bottom: 35px;
 }
@@ -1568,6 +1572,18 @@ nav .left {
   font-weight: 400;
   letter-spacing: 0.1px;
   line-height: 1.5;
+}
+/* news select
+================================================================================*/
+.news-s__img {
+  width: 100%;
+  height: 330px;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  object-fit: cover;
+  margin-bottom: 30px;
 }
 /* @MEDIA */
 /*                           320-991 index
