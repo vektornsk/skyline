@@ -370,10 +370,7 @@ input[type="text"]:focus:-ms-input-placeholder {
 .txt-box ul li:after {
   content: '';
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  top: 9px;
   left: 0;
   width: 6px;
   height: 6px;
@@ -1888,6 +1885,10 @@ nav .left {
   .content-top > * {
     display: none;
   }
+  /* Image */
+  .image {
+    height: 100px;
+  }
 }
 /* 320-767*/
 /*                           480-768
@@ -2025,8 +2026,3 @@ nav .left {
 }
 /* media page news-select
 ================================================================================*/
-@media (min-width: 320px) and (max-width: 767px) {
-  .news-s__img {
-    height: 100px;
-  }
-}
