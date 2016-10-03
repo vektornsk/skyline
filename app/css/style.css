@@ -1579,6 +1579,11 @@ nav .left {
   letter-spacing: 0.1px;
   line-height: 2;
 }
+@media (max-width: 767px) {
+  .contact__btn {
+    text-align: center;
+  }
+}
 /* MAP */
 #map {
   width: 100%;
