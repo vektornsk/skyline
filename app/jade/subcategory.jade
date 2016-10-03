@@ -1,0 +1,45 @@
+extends ./tmp/_template.jade
+include ./tmp/_bread-crumbs.jade
+
+block title
+	title Подкатегории
+block content
+	.wrap-top
+		.container.content-wrap
+			.content-top
+				+bread
+			h1 Женское
+			ul.sub-category
+				li.sub-category__item
+					a.sub-category__link(href="#")
+					.sub-category__inner
+					img.sub-category__img(src="/images/woman-1.png")
+					.sub-category__title Колготки, чулки и носки
+				li.sub-category__item
+					a.sub-category__link(href="#")
+					.sub-category__inner
+					img.sub-category__img(src="/images/woman-2.png")
+					.sub-category__title Нижнеее белье
+				li.sub-category__item
+					a.sub-category__link(href="#")
+					.sub-category__inner
+					img.sub-category__img(src="/images/woman-3.png") 
+					.sub-category__title Эротическое белье
+				li.sub-category__item
+					a.sub-category__link(href="#")
+					.sub-category__inner
+					img.sub-category__img(src="/images/woman-2.png")
+					.sub-category__title Одежда для дома
+				li.sub-category__item
+					a.sub-category__link(href="#")
+					.sub-category__inner
+					img.sub-category__img(src="/images/woman-3.png")
+					.sub-category__title Купальники
+				li.sub-category__item
+					a.sub-category__link(href="#")
+					.sub-category__inner
+					img.sub-category__img(src="/images/woman-1.png")
+					.sub-category__title Одежда
+			.content-bottom						
+
+block hidden
