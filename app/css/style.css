@@ -1609,6 +1609,12 @@ nav .left {
     height: 400px;
   }
 }
+@media (max-width: 481px) {
+  .error-404 {
+    width: 480px;
+    height: 450px;
+  }
+}
 .error-404__404 {
   position: absolute;
   font-size: 72px;
@@ -1645,6 +1651,11 @@ nav .left {
   .error-404__inner {
     width: 250px;
     left: 30px;
+  }
+}
+@media (max-width: 481px) {
+  .error-404__inner {
+    left: 70px;
   }
 }
 .error-404__txt {
