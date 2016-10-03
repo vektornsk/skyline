@@ -1,0 +1,90 @@
+/* review
+================================================================================*/
+.review {
+  width: 100%;
+  border: 1px solid #efefef;
+  margin-top: 70px;
+  &__title {
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 1;
+    padding: 18px 23px;
+    border-bottom: 1px solid #efefef;
+  }
+}
+.review {
+  &__item {
+    .cf;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 22.75%;
+    height: 160px;
+    margin: 10px;
+    margin-bottom: 0;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  &__inner {
+    float: left;
+    width: calc(~"100% - 118px");
+    height: 100%;
+    &_right {
+      width: 108px;
+      margin-left: 10px;
+    position: relative;
+
+    }
+  }
+  &__img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  &__name {
+    text-transform: uppercase;
+    color: #222;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  &__price {
+    text-transform: uppercase;
+    color: #222;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    line-height: 1;
+  }
+  &__liked {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    left: 0;
+    bottom: 20px;
+    z-index: 2;
+    a {
+      &:hover {
+        .like-ico {
+          path {
+            fill: @color-hover;
+          }
+        }
+      }
+    }
+  }
+}

@@ -134,6 +134,21 @@ h1,.h1 {
 			background: transparent;
 			border: 1px solid #fff;
 		}
+		&_pink {
+			background: transparent;
+			border: 1px solid #a6a;
+			&:hover {
+				background: #a6a;
+				span {
+					color: #fff;
+				}
+				svg {
+					path {
+						fill: #fff;
+					}
+				}
+			}
+		}
 }
 input.btn {
 	line-height: 1;
@@ -249,6 +264,10 @@ cite,.cite {
 @import "_contacts";
 @import "_404";
 @import "_category";
+@import "_catalog";
+@import "_product";
+@import "_pagination";
+@import "_review";
 /*news*/
 @import "_news";
 
