@@ -1,0 +1,23 @@
+extends ./tmp/_template.jade
+include ./tmp/_bread-crumbs.jade
+
+block title
+	title Contacts
+block content
+	.wrap-top
+		.container.content-wrap
+			.content-top
+				+bread
+			.contact
+				#map
+				h1 Контакты
+				.contact__title Наш адрес в г. Новосибирске:
+				ul.contact__list
+					li ул.Шевченко, 31а
+					li тел.: +7 (383) 362-06-24
+					li E-mail: 120070@mail.ru
+				.contact__txt Для обращения воспользуйтесь телефоном или расположенной ниже формой. <br /> Будем рады новым партнерам и клиентам.
+				a.btn(href="#") Оставить сообщение
+			.content-bottom						
+
+block hidden
