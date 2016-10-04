@@ -10,8 +10,13 @@ block content
 				.left
 					+bread
 				.right
-					//- TODO: select
-					span [TODO: Селект]
+				.select-wrap.select-wrap_line.select-wrap_right
+					select.select(placeholder="Сортировать новости")
+						option
+						option(value="1") Новости за неделю
+						option(value="2") Новости за месяц
+						option(value="3") Новости за год
+						option(value="4") Все новости
 			h1 Новости
 			ul.news-wrap
 				li.news
