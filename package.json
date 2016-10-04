@@ -20,5 +20,13 @@
   },
   "main": "gulpfile.js",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vektornsk/skyline.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vektornsk/skyline/issues"
+  },
+  "homepage": "https://github.com/vektornsk/skyline#readme",
   "description": ""
 }

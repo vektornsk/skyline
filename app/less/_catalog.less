@@ -16,7 +16,7 @@
 /* menu-catalog */
 .menu-catalog {
   .cf;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 
   h1 {
     font-size: 21px;
@@ -35,5 +35,28 @@
       font-weight: 600;
     }
   }
+}
 
+/* media catalog*/
+@media screen and (max-width: 1229px) {
+  .catalog {
+    .product {
+      width: 270px;
+      &:nth-child(3n) {
+        margin-right: 15px;
+      }
+    }
+    .menu-catalog {
+      margin-bottom: 0;
+      .left {
+        float: none;
+      }
+      .right {
+        float: none;
+      }
+      &__resul {
+        margin-bottom: 35px;
+      }
+    }
+  }
 }

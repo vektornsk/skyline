@@ -153,11 +153,30 @@ $('.select-check').SumoSelect({
 //             filter: true
 //         });
 
-/* value price*/
-$('#value').ionRangeSlider({
-	type: "double",
-	min: 10,
-	max: 5000,
-});
+	/* value price*/
+	$('#value').ionRangeSlider({
+		type: "double",
+		min: 10,
+		max: 5000,
+	});
+
+	/* long txt */
+	function cutLongString(element, count_lit){
+
+		element.each(function(i, elem){
+			if ($(elem).html().length > count_lit){
+					new_text = $(elem).html().substr(0, (count_lit - 3)) + '...';
+					// заменяем текст в блоке
+					$(elem).html(new_text);
+			}
+		});
+	}
+	cutLongString($('.news__title'), 69);
+	cutLongString($('.news__txt'), 180);
+	cutLongString($('.product__name'), 40);
+	cutLongString($('.review__name'), 47);
+
+
+
 
 }); /* end $*/
