@@ -16,6 +16,18 @@ block content
 							h1 Каталог товаров
 							.menu-catalog__resul Всего показано товаров: <span>1000</span>
 						.right
+							.select-wrap.select-wrap_line
+								select.select(placeholder="Товаров на странице: 12")
+									option
+									option(value="1") 6
+									option(value="2") 12
+									option(value="3") 18
+									option(value="4") 21
+								select.select(placeholder="СОРТИРОВАТЬ ПО...")
+									option
+									option(value="1") имени
+									option(value="2") ЦЕНЕ (ВОЗРАСТАНИЮ)
+									option(value="3") ЦЕНЕ (УБЫВАНИЮ)
 					ul.product-list
 						li.product
 							a.product__link(href="#")

@@ -39,7 +39,10 @@ gulp.task('jade', function(){
 gulp.task('scripts', function(){
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/slick-carousel/slick/slick.min.js'
+		'app/libs/slick-carousel/slick/slick.min.js',
+		'app/libs/multiple-select/multiple-select.js',
+		'app/libs/iCheck/icheck.min.js',
+		'app/libs/selectize/dist/js/standalone/selectize.js'
 	])
 		.pipe(concat('libs.js'))
 		.pipe(uglify())
@@ -48,7 +51,10 @@ gulp.task('scripts', function(){
 // CSS
 gulp.task('libcss', function(){
 	return gulp.src([
-		'app/libs/slick-carousel/slick/slick.css'
+		'app/libs/slick-carousel/slick/slick.css',
+		'app/libs/multiple-select/multiple-select.css',
+		'app/libs/iCheck/skins/minimal/_all.css',
+		'app/libs/selectize/dist/css/selectize.default.css',
 	])
 	.pipe(concat('libs-style.css'))
 	.pipe(gulp.dest('app/css'));

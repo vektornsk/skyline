@@ -132,4 +132,7 @@ if ($('#map').length){
 			});
 }
 
+/* select - selectize.js */
+$('.select').selectize();
+
 });
