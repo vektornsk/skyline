@@ -346,18 +346,6 @@ input[type="text"] {
 input[type="text"].error {
   border: 1px solid red;
 }
-input[type="text"]:focus::-webkit-input-placeholder {
-  color: transparent;
-}
-input[type="text"]:focus::-moz-placeholder {
-  color: transparent;
-}
-input[type="text"]:focus:-moz-placeholder {
-  color: transparent;
-}
-input[type="text"]:focus:-ms-input-placeholder {
-  color: transparent;
-}
 /* IMAGES
 ================================================================================*/
 .image {
@@ -417,68 +405,166 @@ cite span,
 }
 /* SELECT -style
 ================================================================================*/
-.select-wrap_line .selectize-control {
-  display: inline-block;
-  margin-left: 10px;
+.select-wrap {
+  zoom: 1;
+}
+.select-wrap:before,
+.select-wrap:after {
+  content: "";
+  display: table;
+}
+.select-wrap:after {
+  clear: both;
 }
 .select-wrap_right {
-  text-align: right;
+  float: right;
 }
-.select-wrap_right .selectize-control {
-  text-align: left;
+.select-wrap_100 .SumoSelect {
+  width: 100%;
 }
-.selectize-input {
-  border: 1px solid #efefef;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  padding: 0 0 0 25px;
-  min-width: 218px;
-  height: 42px;
-  line-height: 42px;
-  text-transform: uppercase;
-  color: #222;
-  font-weight: 400;
-  letter-spacing: 0.1px;
-  font-size: 12px;
+.select-wrap_line .SumoSelect + .SumoSelect {
+  margin-left: 15px;
 }
-.selectize-input input {
-  color: #222;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 0.1px;
-  font-size: 12px;
-  text-transform: uppercase;
+.SumoSelect {
+  width: auto;
+  min-width: 220px;
+  margin-bottom: 25px;
 }
-.selectize-control.single .selectize-input {
+.SumoSelect:focus .CaptionCont {
   -webkit-box-shadow: none;
   box-shadow: none;
-  background-color: #fff;
-  background-image: none;
   border-color: #efefef;
 }
-.selectize-control.single .selectize-input:after {
-  border-color: #333 transparent transparent transparent;
-}
-.selectize-control.single .selectize-input.dropdown-active:after {
-  border-color: transparent transparent #333 transparent;
-}
-.selectize-dropdown {
-  border: 1px solid #efefef !important;
-  background: #f7f7f7;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  color: #222;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 0.1px;
-  font-size: 12px;
-  text-transform: uppercase;
+.SumoSelect:hover .CaptionCont {
   -webkit-box-shadow: none;
   box-shadow: none;
+  border-color: #efefef;
 }
-.selectize-dropdown .active {
-  color: #222;
-  background-color: #ecaa2d;
+.SumoSelect.open .CaptionCont {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #efefef;
+}
+.SumoSelect.open .CaptionCont label i {
+  border-width: 0 4px 6px 4px;
+  border-color: transparent transparent #222 transparent;
+}
+.SumoSelect.open .optWrapper {
+  top: 40px;
+}
+.SumoSelect.open .search-txt {
+  text-transform: uppercase;
+}
+.SumoSelect .CaptionCont {
+  border: 1px solid #efefef;
+  height: 42px;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.SumoSelect .CaptionCont span {
+  line-height: 42px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-style: normal !important;
+  color: #222 !important;
+}
+.SumoSelect .CaptionCont label {
+  border-left: 1px solid #efefef;
+  cursor: pointer;
+}
+.SumoSelect .CaptionCont label i {
+  background-image: none;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #222 transparent transparent transparent;
+}
+.SumoSelect .SelectBox {
+  padding: 0 0 0 20px;
+}
+.SumoSelect .optWrapper {
+  top: 40px;
+  border: 1px solid #efefef;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.SumoSelect .optWrapper.multiple .options li.opt.selected span i {
+  background-color: #a6a;
+}
+.SumoSelect .optWrapper .options {
+  background-color: #f7f7f7;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.SumoSelect .optWrapper .options .opt:first-child {
+  display: none;
+}
+.SumoSelect .optWrapper .options li.opt {
+  border-bottom: 1px solid #efefef;
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+  cursor: pointer;
+  padding: 10px;
+}
+.SumoSelect .optWrapper .options li.opt:hover {
+  background-color: #ecaa2d !important;
+}
+.SumoSelect .optWrapper .options li.opt:hover label {
+  color: #fff !important;
+}
+.SumoSelect .optWrapper .options li label {
+  color: #333;
+}
+/* checkbox -style
+================================================================================*/
+.icheckbox_minimal,
+.iradio_minimal {
+  background: url(../images/minimal.png) no-repeat;
+}
+/* value price
+================================================================================*/
+.irs-line-mid,
+.irs-line-left,
+.irs-line-right,
+.irs-bar,
+.irs-bar-edge,
+.irs-slider {
+  background: url(../images/sprite-skin-flat.png) repeat-x;
+}
+.irs-line {
+  height: 2px;
+  top: 30px;
+}
+.irs-bar {
+  height: 2px;
+  top: 30px;
+  background-position: 0 -60px;
+}
+.irs-bar-edge {
+  top: 25px;
+  height: 12px;
+  width: 9px;
+  background-position: 0 -90px;
+}
+.irs-slider {
+  width: 16px;
+  height: 18px;
+  top: 22px;
+  background-position: 0 -120px;
+}
+.irs-from,
+.irs-to,
+.irs-single {
+  background: #a6a;
+}
+.irs-from:after,
+.irs-to:after,
+.irs-single:after {
+  border-top-color: #a6a;
 }
 /* Include Style
 ================================================================================*/
@@ -1504,7 +1590,7 @@ nav .left {
 .search-wrap:after {
   clear: both;
 }
-.search {
+input.search {
   float: left;
   width: 300px !important;
   height: 30px !important;
@@ -1937,6 +2023,7 @@ nav .left {
   float: left;
   margin-right: 15px;
   margin-bottom: 15px;
+  overflow: hidden;
 }
 .product:nth-child(3n) {
   margin-right: 0;
@@ -2190,6 +2277,28 @@ nav .left {
 .review__liked a:hover .like-ico path {
   fill: #ecaa2d;
 }
+/* Filter
+================================================================================*/
+.filter {
+  width: 100%;
+  border: 1px solid #efefef;
+  margin-bottom: 25px;
+}
+.filter__title {
+  border-bottom: 1px solid #efefef;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.filter__box {
+  padding: 20px;
+}
+.filter .SumoSelect {
+  width: 100% !important;
+}
 /*news*/
 /* NEWS -pade
 ================================================================================*/
@@ -2336,7 +2445,7 @@ nav .left {
     width: 300px;
     display: none;
   }
-  .search {
+  input.search {
     width: 262px !important;
   }
   .search-btn-wrap {
@@ -2601,7 +2710,7 @@ nav .left {
   .search-wrap {
     width: 290px;
   }
-  .search {
+  input.search {
     width: 260px !important;
   }
   .search-btn-wrap {

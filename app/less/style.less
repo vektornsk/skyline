@@ -185,10 +185,10 @@ input[type="text"] {
 	&.error {
 		border: 1px solid red;
 	}
-	&:focus::-webkit-input-placeholder {color: transparent}
-	&:focus::-moz-placeholder          {color: transparent}
-	&:focus:-moz-placeholder           {color: transparent}
-	&:focus:-ms-input-placeholder      {color: transparent}
+	// &:focus::-webkit-input-placeholder {color: transparent}
+	// &:focus::-moz-placeholder          {color: transparent}
+	// &:focus:-moz-placeholder           {color: transparent}
+	// &:focus:-ms-input-placeholder      {color: transparent}
 }
 /* IMAGES
 ================================================================================*/
@@ -249,68 +249,176 @@ cite,.cite {
 /* SELECT -style
 ================================================================================*/
 .select-wrap {
-	&_line {
-		.selectize-control {
-			display: inline-block;
-			margin-left: 10px;
-		}
-	}
+	.cf;
 	&_right {
-		text-align: right;
-		.selectize-control {
-			text-align: left;
+		float: right;
+	}
+	&_100 {
+		.SumoSelect {
+			width: 100%;
+		}
+	}
+	&_line {
+		.SumoSelect + .SumoSelect {
+			margin-left: 15px;
 		}
 	}
 }
-.selectize-input {
-	border: 1px solid #efefef;
-	border-radius: 0;
-	padding: 0 0 0 25px;
-	min-width: 218px;
-	height: 42px;
-	line-height: 42px;
-	text-transform: uppercase;
-	color: #222;
-	font-weight: 400;
-	letter-spacing: 0.1px;
-	font-size: 12px;
+
+.SumoSelect {
+	width: auto;
+	min-width: 220px;
+	margin-bottom: 25px;
+	&:focus {
+		.CaptionCont {
+			box-shadow: none;
+			border-color: #efefef;
+		}
+	}
+	&:hover {
+		.CaptionCont {
+			box-shadow: none;
+			border-color: #efefef;
+		}
+	}
+	&.open {
+		.CaptionCont {
+			box-shadow: none;
+			border-color: #efefef;
+			label {
+				i {
+					border-width: 0 4px 6px 4px;
+			    border-color: transparent transparent #222 transparent;
+				}
+			}
+		}
+		.optWrapper {
+			top: 40px;
+		}
+		.search-txt {
+			text-transform: uppercase;
+		}
+	}
+	.CaptionCont {
+		border: 1px solid #efefef;
+		height: 42px;
+		border-radius: 0;
+		span {
+			line-height: 42px;
+			text-transform: uppercase;
+			cursor: pointer;
+			font-style: normal !important;
+			color: #222 !important;
+		}
+		label {
+			border-left: 1px solid #efefef;
+			cursor: pointer;
+			i {
+				background-image: none;
+		    display: inline-block;
+		    width: 0;
+		    height: 0;
+		    border-style: solid;
+		    border-width: 6px 4px 0 4px;
+		    border-color: #222 transparent transparent transparent;
+			}
+		}
+	}
+	.SelectBox {
+		padding: 0 0 0 20px;
+	}
+	.optWrapper {
+		top: 40px;
+		border: 1px solid #efefef;
+		box-shadow: none;
+    border-radius: 0;
+		&.multiple {
+			.options {
+				li {
+					&.opt {
+						&.selected {
+							span {
+								i {
+									background-color: #a6a;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.options {
+			background-color: #f7f7f7;
+			border-radius: 0;
+			.opt:first-child {
+				display: none;
+			}
+			li {
+				&.opt {
+					border-bottom: 1px solid #efefef;
+					border-radius: 0 !important;
+					cursor: pointer;
+					padding: 10px;
+					&:hover {
+						background-color: @color-hover !important;
+						label {
+							color: #fff !important;
+						}
+					}
+				}
+				label {
+					color: #333;
+				}
+			}
+		}
+	}
 }
-.selectize-input input {
-	color: #222;
-	font-weight: 400;
-	line-height: 1;
-	letter-spacing: 0.1px;
-	font-size: 12px;
-	text-transform: uppercase;
+
+/* checkbox -style
+================================================================================*/
+.icheckbox_minimal, .iradio_minimal {
+	background: url(../images/minimal.png) no-repeat;
 }
-.selectize-control.single .selectize-input {
-	box-shadow: none;
-	background-color: #fff;
-	background-image: none;
-	border-color: #efefef;
+/* value price
+================================================================================*/
+
+.irs-line-mid,
+.irs-line-left,
+.irs-line-right,
+.irs-bar,
+.irs-bar-edge,
+.irs-slider {
+    background: url(../images/sprite-skin-flat.png) repeat-x;
 }
-.selectize-control.single .selectize-input:after {
-	border-color: #333 transparent transparent transparent;
+.irs-line {
+	height: 2px;
+	top: 30px;
 }
-.selectize-control.single .selectize-input.dropdown-active:after {
-	 border-color: transparent transparent #333 transparent;
+.irs-bar {
+    height: 2px;
+    top: 30px;
+    background-position: 0 -60px;
 }
-.selectize-dropdown {
-	border: 1px solid #efefef !important;
-	background: #f7f7f7;
-	border-radius: 0;
-	color: #222;
-	font-weight: 400;
-	line-height: 1;
-	letter-spacing: 0.1px;
-	font-size: 12px;
-	text-transform: uppercase;
-	box-shadow: none;
+.irs-bar-edge {
+    top: 25px;
+    height: 12px;
+    width: 9px;
+    background-position: 0 -90px;
 }
-.selectize-dropdown .active {
-		color: #222;
-		background-color: @color-hover;
+.irs-slider {
+    width: 16px;
+    height: 18px;
+    top: 22px;
+    background-position: 0 -120px;
 }
+.irs-from, .irs-to, .irs-single {
+	background: #a6a;
+}
+.irs-from:after, .irs-to:after, .irs-single:after {
+  border-top-color: #a6a;
+}
+
+
 /* Include Style
 ================================================================================*/
 
@@ -332,6 +440,7 @@ cite,.cite {
 @import "_product";
 @import "_pagination";
 @import "_review";
+@import "_filter";
 /*news*/
 @import "_news";
 

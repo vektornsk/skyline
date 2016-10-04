@@ -40,9 +40,10 @@ gulp.task('scripts', function(){
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/slick-carousel/slick/slick.min.js',
-		'app/libs/multiple-select/multiple-select.js',
-		'app/libs/iCheck/icheck.min.js',
-		'app/libs/selectize/dist/js/standalone/selectize.js'
+		// 'app/libs/multiple-select/multiple-select.js',
+		// 'app/libs/selectize/dist/js/standalone/selectize.js',
+		'app/libs/ion.rangeSlider/js/ion.rangeSlider.min.js',
+		'app/libs/sumoselect/jquery.sumoselect.js'
 	])
 		.pipe(concat('libs.js'))
 		.pipe(uglify())
@@ -52,9 +53,11 @@ gulp.task('scripts', function(){
 gulp.task('libcss', function(){
 	return gulp.src([
 		'app/libs/slick-carousel/slick/slick.css',
-		'app/libs/multiple-select/multiple-select.css',
-		'app/libs/iCheck/skins/minimal/_all.css',
-		'app/libs/selectize/dist/css/selectize.default.css',
+		// 'app/libs/multiple-select/multiple-select.css', /*http://wenzhixin.net.cn/p/multiple-select/docs/#the-basics1*/
+		// 'app/libs/selectize/dist/css/selectize.default.css', /*https://github.com/selectize/selectize.js*/
+		'app/libs/ion.rangeSlider/css/ion.rangeSlider.css',
+		'app/libs/ion.rangeSlider/css/ion.rangeSlider.skinFlat.css',
+		'app/libs/sumoselect/sumoselect.css'
 	])
 	.pipe(concat('libs-style.css'))
 	.pipe(gulp.dest('app/css'));

@@ -10,6 +10,45 @@ block content
 				+bread
 			.catalog
 				.catalog__left
+					.filter
+						.filter__title Категории
+						.filter__box
+							ul.filter-category
+								li
+									input(type="checkbox")
+									label checkbox
+									ul
+										li
+											input(type="checkbox")
+											label checkbox
+										li
+											input(type="checkbox")
+											label checkbox
+					.filter
+						.filter__title Цена
+						.filter__box
+							input(type="text", id="value", name="value-price", value="")
+					.select-wrap.select-wrap_100 
+						select.select-check(placeholder="Бренды", multiple="multiple")
+							option
+							option(value="1") Бренд 1
+							option(value="2") Бренд 2
+							option(value="3") Бренд 3
+							option(value="4") Бренд 4
+							option(value="1") Бренд 1
+							option(value="2") Бренд 2
+							option(value="3") Бренд 3
+							option(value="4") Бренд 4		
+							option(value="1") Бренд 1
+							option(value="2") Бренд 2
+							option(value="3") Бренд 3
+							option(value="4") Бренд 4				
+						select.select-check(placeholder="Размер", multiple="multiple")
+							option
+							option(value="1") Размер 1
+							option(value="2") Размер 2
+							option(value="3") Размер 3
+							option(value="4") Размер 4
 				.catalog__right
 					.menu-catalog
 						.left
@@ -23,9 +62,9 @@ block content
 									option(value="2") 12
 									option(value="3") 18
 									option(value="4") 21
-								select.select(placeholder="СОРТИРОВАТЬ ПО...")
+								select.select.select_two(placeholder="СОРТИРОВАТЬ ПО...")
 									option
-									option(value="1") имени
+									option(value="1") Имени
 									option(value="2") ЦЕНЕ (ВОЗРАСТАНИЮ)
 									option(value="3") ЦЕНЕ (УБЫВАНИЮ)
 					ul.product-list
