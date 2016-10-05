@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content ie="edge">
+    <title>Личный кабинет</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize-4.1.1.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/libs-style.css">
+    <link rel="stylesheet" href="../css/style.css"><!--[if lt IE 9]>
+    <script src='../js/html5shiv.js'></script>
+    <script src='../js/respond-1.4.2.min.js'></script>
+    <script src='http://phpbbex.com/oldies/oldies.js' charset='utf-8'></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="bg-layout"></div>
+    <div id="wrapper">
+      <header>
+        <div class="header">
+          <div class="header-top">
+            <div class="container">
+              <div class="header-wrap">
+                <div class="left">
+                  <div class="m-burger"><svg class="m-burger-ico" height="17" width="21" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 17"><path fill="none" fill-rule="evenodd" d="M 20.66 0.34 L 0 0.34 L 0 3.42 L 20.66 3.42 L 20.66 0.34 L 20.66 0.34 Z M 20.66 0.34" /><path fill="#fefefe" fill-rule="evenodd" d="M 19.12 3.42 L 1.54 3.42 C 0.69 3.42 0 2.73 0 1.88 L 0 1.88 C 0 1.03 0.69 0.34 1.54 0.34 L 19.12 0.34 C 19.97 0.34 20.66 1.03 20.66 1.88 L 20.66 1.88 C 20.66 2.73 19.97 3.42 19.12 3.42" /><path fill="none" fill-rule="evenodd" d="M 0 6.69 L 0 9.76 L 20.66 9.76 L 20.66 6.69 L 0 6.69 L 0 6.69 Z M 0 6.69" /><path fill="#fefefe" fill-rule="evenodd" d="M 19.12 9.76 L 1.54 9.76 C 0.69 9.76 0 9.07 0 8.22 L 0 8.22 C 0 7.37 0.69 6.69 1.54 6.69 L 19.12 6.69 C 19.97 6.69 20.66 7.37 20.66 8.22 L 20.66 8.22 C 20.66 9.07 19.97 9.76 19.12 9.76" /><path fill="none" fill-rule="evenodd" d="M 10.33 16.1 L 0 16.1 L 0 13.03 L 20.66 13.03 L 20.66 16.1 L 10.33 16.1 L 10.33 16.1 Z M 10.33 16.1" /><path fill="#fefefe" fill-rule="evenodd" d="M 19.12 16.1 L 1.54 16.1 C 0.69 16.1 0 15.42 0 14.57 L 0 14.57 C 0 13.72 0.69 13.03 1.54 13.03 L 19.12 13.03 C 19.97 13.03 20.66 13.72 20.66 14.57 L 20.66 14.57 C 20.66 15.42 19.97 16.1 19.12 16.1" /></svg></div>
+                  <ul class="location">
+                    <li>
+                      <div class="city">г.Новосибирск</div>
+                    </li>
+                    <li>
+                      <div class="tel">+7 (383) 362-06-84</div>
+                    </li>
+                    <li><a href="#" class="link-opt">Перейти на сайт для оптовых закупок	</a></li>
+                  </ul>
+                </div>
+                <div class="right">
+                  <ul class="menu-top">
+                    <li>
+                      <label for="search" class="m-search"><svg class="m-search-ico" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="17" height="16"><defs id="SvgjsDefs1015"></defs><path id="SvgjsPath1016" d="M190.9 27.6L187.6 24.3C186.5 25.1 185.1 25.5 183.79999999999998 25.5C179.99999999999997 25.5 176.99999999999997 22.5 176.99999999999997 18.8C176.99999999999997 15.100000000000001 179.99999999999997 12 183.79999999999998 12C187.6 12 190.6 15 190.6 18.8C190.6 20.2 190.2 21.5 189.4 22.6L192.70000000000002 25.900000000000002C192.9 26.1 193.10000000000002 26.400000000000002 193.10000000000002 26.8C193.00000000000003 27.400000000000002 192.40000000000003 28 191.8 28C191.5 28 191.20000000000002 27.9 190.9 27.6ZM179.5 18.8C179.5 21.2 181.4 23.1 183.8 23.1C186.20000000000002 23.1 188.10000000000002 21.200000000000003 188.10000000000002 18.8C188.10000000000002 16.400000000000002 186.10000000000002 14.5 183.8 14.5C181.4 14.5 179.5 16.4 179.5 18.8Z " fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-177,-12)"></path></svg></label>
+                    </li>
+                    <li> <a href="#" class="m-cart"><svg class="m-cart-ico" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="16" height="14"><defs id="SvgjsDefs1009"></defs><path id="SvgjsPath1010" d="M230 20C230 20.3 229.8 20.6 229.5 20.6L219.5 21.8C219.5 22 219.6 22.3 219.6 22.5C219.6 22.7 219.4 23 219.29999999999998 23.2L228.1 23.2C228.4 23.2 228.7 23.5 228.7 23.8C228.7 24.1 228.39999999999998 24.400000000000002 228.1 24.400000000000002L218.29999999999998 24.400000000000002C217.99999999999997 24.400000000000002 217.7 24.1 217.7 23.8C217.7 23.5 218.2 22.7 218.29999999999998 22.400000000000002L216.6 14.300000000000002L214.6 14.300000000000002C214.29999999999998 14.300000000000002 214 14.000000000000002 214 13.600000000000003C214 13.200000000000003 214.3 13.000000000000004 214.6 13.000000000000004L217.1 13.000000000000004C217.79999999999998 13.000000000000004 217.79999999999998 13.800000000000004 217.9 14.300000000000004L229.4 14.300000000000004C229.70000000000002 14.300000000000004 230 14.600000000000005 230 14.900000000000004L230 20.000000000000004Z " fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-214,-13)"></path><path id="SvgjsPath1011" d="M218 25.5C218 24.67157 218.44772 24 219 24C219.55228 24 220 24.67157 220 25.5C220 26.32843 219.55228 27 219 27C218.44772 27 218 26.32843 218 25.5Z " fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-214,-13)"></path><path id="SvgjsPath1012" d="M225.5 16.9C225.3 16.9 225.2 17 225.1 17.099999999999998L223.6 18.599999999999998L223.6 15.599999999999998C223.6 15.299999999999997 223.29999999999998 14.999999999999998 223 14.999999999999998C222.7 14.999999999999998 222.4 15.299999999999999 222.4 15.599999999999998L222.4 18.499999999999996L221 17.099999999999998C220.9 16.999999999999996 220.7 16.9 220.6 16.9C220.29999999999998 16.9 220 17.2 220 17.5C220 17.7 220.1 17.8 220.2 17.9L222.7 20.4C222.79999999999998 20.5 223 20.599999999999998 223.1 20.599999999999998C223.29999999999998 20.599999999999998 223.4 20.499999999999996 223.5 20.4L226 17.9C226.1 17.799999999999997 226.2 17.599999999999998 226.2 17.5C226.1 17.2 225.79999999999998 16.9 225.5 16.9Z " fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-214,-13)"></path><path id="SvgjsPath1013" d="M226 25.5C226 24.67157 226.44772 24 227 24C227.55228 24 228 24.67157 228 25.5C228 26.32843 227.55228 27 227 27C226.44772 27 226 26.32843 226 25.5Z " fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-214,-13)"></path></svg></a></li>
+                    <li><a href="#" class="liked"><svg class="like-ico" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="16" height="14"><defs id="SvgjsDefs1018"></defs><path id="SvgjsPath1019" d="M258.4 26.9C258.29999999999995 26.9 258.09999999999997 27 258 27C257.9 27 257.7 26.9 257.6 26.8L252.00000000000003 21.3C252.00000000000003 21.3 250.00000000000003 19.5 250.00000000000003 17.3C250.00000000000003 14.600000000000001 251.60000000000002 13 254.30000000000004 13C255.90000000000003 13 257.30000000000007 14.3 258.00000000000006 15C258.70000000000005 14.3 260.20000000000005 13 261.70000000000005 13C264.40000000000003 13 266.00000000000006 14.6 266.00000000000006 17.3C266.00000000000006 19.5 264.00000000000006 21.3 264.00000000000006 21.4ZM258.4 16.2C258.2 16.5 257.7 16.5 257.5 16.2C257 15.6 255.5 14.2 254.2 14.2C252.79999999999998 14.2 251.1 14.7 251.1 17.3C251.1 19 252.79999999999998 20.5 252.79999999999998 20.5L258 25.6L263.2 20.5C263.2 20.5 264.9 18.9 264.9 17.3C264.9 14.700000000000001 263.2 14.200000000000001 261.7 14.200000000000001C260.4 14.200000000000001 258.9 15.700000000000001 258.4 16.200000000000003Z " fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-250,-13)"></path></svg><span>Избранное</span></a></li>
+                    <li>
+                      <div class="lk"><svg class="lk-ico" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="15" height="16"><defs id="SvgjsDefs1015"></defs><path id="SvgjsPath1016" d="M1026.8 37C1025.2 37 1024 36 1024 34.3C1024 31.9 1024.6 28.299999999999997 1027.7 28.299999999999997C1028 28.299999999999997 1029.4 29.699999999999996 1031.5 29.699999999999996C1033.6 29.699999999999996 1035 28.299999999999997 1035.3 28.299999999999997C1038.3999999999999 28.299999999999997 1039 31.9 1039 34.3C1039 36 1037.8 37 1036.2 37ZM1031.5 29C1033.8 29 1035.6 27.2 1035.6 25C1035.6 22.8 1033.8 21 1031.5 21C1029.2 21 1027.4 22.8 1027.4 25C1027.4 27.2 1029.2 29 1031.5 29Z " fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-1024,-21)"></path></svg> <span>Личный кабинет</span></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-main">
+            <div class="container">
+              <div class="header-wrap">
+                <div class="logo-wrap"><a href="#" class="logo"><img src="/images/logo.png" class="logo__img"/></a><span>Оптово-розничный интернет-магазин</span></div>
+                <div class="banner-wrap"><a href="#" class="banner"><img src="/images/banner.png" alt=""/></a></div>
+                <div class="cart-wrap"><a href="#" class="cart"><svg class="cart-ico" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="16" height="14"><defs id="SvgjsDefs1018"></defs><path id="SvgjsPath1019" d="M929 97C929 97.3 928.8 97.6 928.5 97.6L918.5 98.8C918.5 99 918.6 99.3 918.6 99.5C918.6 99.7 918.4 100 918.3000000000001 100.2L927.1 100.2C927.4 100.2 927.7 100.5 927.7 100.8C927.7 101.1 927.4000000000001 101.39999999999999 927.1 101.39999999999999L917.3000000000001 101.39999999999999C917.0000000000001 101.39999999999999 916.7 101.1 916.7 100.8C916.7 100.5 917.2 99.7 917.3000000000001 99.39999999999999L915.6 91.3L913.6 91.3C913.3000000000001 91.3 913 91 913 90.6C913 90.19999999999999 913.3 90 913.6 90L916.1 90C916.8000000000001 90 916.8000000000001 90.8 916.9 91.3L928.4 91.3C928.6999999999999 91.3 929 91.6 929 91.89999999999999L929 96.99999999999999Z " fill="#333333" fill-opacity="1" transform="matrix(1,0,0,1,-913,-90)"></path><path id="SvgjsPath1020" d="M917 102.5C917 101.67157 917.44772 101 918 101C918.55228 101 919 101.67157 919 102.5C919 103.32843 918.55228 104 918 104C917.44772 104 917 103.32843 917 102.5Z " fill="#333333" fill-opacity="1" transform="matrix(1,0,0,1,-913,-90)"></path><path id="SvgjsPath1021" d="M924.5 93.9C924.3 93.9 924.2 94 924.1 94.10000000000001L922.6 95.60000000000001L922.6 92.60000000000001C922.6 92.30000000000001 922.3000000000001 92.00000000000001 922 92.00000000000001C921.7 92.00000000000001 921.4 92.30000000000001 921.4 92.60000000000001L921.4 95.50000000000001L920 94.10000000000001C919.9 94.00000000000001 919.7 93.9 919.6 93.9C919.3000000000001 93.9 919 94.2 919 94.5C919 94.7 919.1 94.8 919.2 94.9L921.7 97.4C921.8000000000001 97.5 922 97.60000000000001 922.1 97.60000000000001C922.3000000000001 97.60000000000001 922.4 97.50000000000001 922.5 97.4L925 94.9C925.1 94.80000000000001 925.2 94.60000000000001 925.2 94.5C925.1 94.2 924.8000000000001 93.9 924.5 93.9Z " fill="#333333" fill-opacity="1" transform="matrix(1,0,0,1,-913,-90)"></path><path id="SvgjsPath1022" d="M925 102.5C925 101.67157 925.44772 101 926 101C926.55228 101 927 101.67157 927 102.5C927 103.32843 926.55228 104 926 104C925.44772 104 925 103.32843 925 102.5Z " fill="#333333" fill-opacity="1" transform="matrix(1,0,0,1,-913,-90)"></path></svg></a>
+                  <div class="cart-info"><span>Товар в корзине</span>
+                    <div value="4" class="cart-size">4</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav>
+            <div class="container">
+              <div class="row">
+                <div class="header-wrap"></div>
+                <div class="left">
+                  <div class="menu-wrap">
+                    <ul class="m-menu">
+                      <li class="m-menu__item"></li>
+                      <li class="m-menu__item"><span>Меню</span></li>
+                      <li class="m-menu__item">
+                        <div class="m-menu__close btn-close-popup"><img src="/images/svg/close-popup.svg"/></div>
+                      </li>
+                    </ul>
+                    <ul class="menu">
+                      <li class="menu__item"><a href="#" class="menu__title"> <span>Женское</span></a>
+                        <ul class="menu-sub">
+                          <li class="menu-sub__item"><a href="#" class="menu__link">Колготки, Чулки и Носки </a>
+                            <ul class="menu-sub2">
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Колготки</a></li>
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Чулки</a></li>
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Носочки/гольфы/следики</a></li>
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Ботфорты/гетры</a></li>
+                            </ul>
+                          </li>
+                          <li class="menu-sub__item"><a href="#" class="menu__link">Нижнее белье</a>
+                            <ul class="menu-sub2">
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Бюстгалтеры</a></li>
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Трусики</a></li>
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Комплекты</a></li>
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Пояса</a></li>
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Майки/топы</a></li>
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Утягивающее</a></li>
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Бесшовное белье</a></li>
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Спортивное</a></li>
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Аксессуары</a></li>
+                            </ul>
+                          </li>
+                          <li class="menu-sub__item"><a href="#" class="menu__link">Эротическое белье</a>
+                            <ul class="menu-sub2">
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Сорочки/бебидолы</a></li>
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Бодистокинги</a></li>
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Эротические трусики</a></li>
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Игровые костюмы</a></li>
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Корсеты</a></li>
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Чулки и пояса</a></li>
+                            </ul>
+                          </li>
+                          <li class="menu-sub__item"><a href="#" class="menu__link">Одежда для дома</a>
+                            <ul class="menu-sub2">
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Пижамы</a></li>
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Домашняя одежда</a></li>
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Домашняя обувь</a></li>
+                            </ul>
+                          </li>
+                          <li class="menu-sub__item"><a href="#" class="menu__link">Купальники</a>
+                            <ul class="menu-sub2">
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Раздельные</a></li>
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Цельные</a></li>
+                              <li class="menu-sub2__item"><a href="#" class="menu__link">Пляжная одежда и аксессуары</a></li>
+                            </ul>
+                          </li>
+                          <li class="menu-sub__item"><a href="#" class="menu__link">Одежда</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu__item"><a href="#" class="menu__title"> <span>Мужское</span></a>
+                        <ul class="menu-sub">
+                          <li class="menu-sub__item"><a href="#" class="menu__link">Трусы </a></li>
+                          <li class="menu-sub__item"><a href="#" class="menu__link">Носки</a></li>
+                          <li class="menu-sub__item"><a href="#" class="menu__link">Кальсоны</a></li>
+                          <li class="menu-sub__item"><a href="#" class="menu__link">Футболки/майки </a></li>
+                          <li class="menu-sub__item"><a href="#" class="menu__link">Одежда для дома</a></li>
+                          <li class="menu-sub__item"><a href="#" class="menu__link">Термобелье</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu__item"><a href="#" class="menu__title"> <span>Детское</span></a>
+                        <ul class="menu-sub">
+                          <li class="menu-sub__item"><a href="#" class="menu__link">Колготки </a></li>
+                          <li class="menu-sub__item"><a href="#" class="menu__link">Легенсы</a></li>
+                          <li class="menu-sub__item"><a href="#" class="menu__link">Носки</a></li>
+                          <li class="menu-sub__item"><a href="#" class="menu__link">Гольфы</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu__item"><a href="#" class="menu__title"> <span>Распродажа</span></a>
+                        <ul class="menu-sub">
+                          <li class="menu-sub__item"><a href="#" class="menu__link">Женское </a></li>
+                          <li class="menu-sub__item"><a href="#" class="menu__link">Мужское</a></li>
+                          <li class="menu-sub__item"><a href="#" class="menu__link">Детское</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="m-loc">
+                      <ul class="location">
+                        <li>
+                          <div class="city">г.Новосибирск</div>
+                        </li>
+                        <li>
+                          <div class="tel">+7 (383) 362-06-84</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="search-wrap">
+                    <form>
+                      <input id="search" type="text" placeholder="Найти на сайте" class="search"/>
+                      <div class="search-btn-wrap"><svg class="search-ico" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="17" height="16"><defs id="SvgjsDefs1015"></defs><path id="SvgjsPath1016" d="M1134.93 155.6L1131.63 152.29999999999998C1130.5200000000002 153.1 1129.1200000000001 153.49999999999997 1127.8200000000002 153.49999999999997C1124.0100000000002 153.49999999999997 1121.0000000000002 150.49999999999997 1121.0000000000002 146.79999999999998C1121.0000000000002 143.1 1124.0100000000002 139.99999999999997 1127.8200000000002 139.99999999999997C1131.63 139.99999999999997 1134.63 142.99999999999997 1134.63 146.79999999999998C1134.63 148.2 1134.23 149.49999999999997 1133.43 150.6L1136.74 153.9C1136.94 154.1 1137.14 154.4 1137.14 154.8C1137.0400000000002 155.4 1136.44 156 1135.8400000000001 156C1135.5400000000002 156 1135.2400000000002 155.9 1134.93 155.6ZM1123.51 146.8C1123.51 149.20000000000002 1125.41 151.10000000000002 1127.82 151.10000000000002C1130.22 151.10000000000002 1132.1299999999999 149.20000000000002 1132.1299999999999 146.8C1132.1299999999999 144.4 1130.12 142.5 1127.82 142.5C1125.4099999999999 142.5 1123.51 144.4 1123.51 146.8Z " fill="#333333" fill-opacity="1" transform="matrix(1,0,0,1,-1121,-140)"></path></svg>
+                        <input type="submit" value="" class="search-btn"/>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div class="popup-menu-wrap">
+            <div class="container">
+              <div class="row">
+                <div class="popup-login">
+                  <div title="Закрыть" class="btn-close-popup"><svg class="btn-close-popup-ico" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="16" height="15"><defs id="SvgjsDefs1021"></defs><path id="SvgjsPath1022" d="M294.24 68L299.74 62.49C300.09000000000003 62.15 300.09000000000003 61.6 299.74 61.260000000000005C299.40000000000003 60.910000000000004 298.85 60.910000000000004 298.51 61.260000000000005L293 66.76L287.49 61.260000000000005C287.15000000000003 60.910000000000004 286.6 60.910000000000004 286.26 61.260000000000005C285.90999999999997 61.60000000000001 285.90999999999997 62.150000000000006 286.26 62.49L291.76 68L286.26 73.51C285.90999999999997 73.85000000000001 285.90999999999997 74.4 286.26 74.74000000000001C286.43 74.91000000000001 286.65 75.00000000000001 286.88 75.00000000000001C287.1 75.00000000000001 287.32 74.91000000000001 287.49 74.74000000000001L293 69.24000000000001L298.51 74.74000000000001C298.68 74.91000000000001 298.9 75.00000000000001 299.12 75.00000000000001C299.35 75.00000000000001 299.57 74.91000000000001 299.74 74.74000000000001C300.09000000000003 74.4 300.09000000000003 73.85000000000001 299.74 73.50000000000001Z " fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-285,-60)"></path></svg></div>
+                  <div class="tabs">
+                    <ul class="tab">
+                      <li class="tab__item active">Войдите на сайт</li>
+                      <li class="tab__item"><span>или</span> Зарегистрируйтесь								</li>
+                    </ul>
+                    <div class="tab__content active">
+                      <div class="form-login">
+                        <form>
+                          <label for="login">Логин (номер телефона или Email):
+                            <input id="login" type="text" name="login"/>
+                          </label>
+                          <label for="pass">Пароль:
+                            <input id="pass" type="text" name="password"/>
+                          </label>
+                          <div class="btn-submit">
+                            <input type="submit" value="Войти" class="btn"/>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="form-login-reset">
+                        <h3>Забыли пароль?</h3>
+                        <form>
+                          <label>Введите (номер телефона или Email):
+                            <input id="login" type="text" name="login"/>
+                          </label>
+                          <div class="btn-submit">
+                            <input type="submit" value="Отправить" class="btn"/>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="login-reset"><span>Забыли пароль?</span></div>
+                    </div>
+                    <div class="tab__content">
+                      <div class="form-reg">
+                        <form>
+                          <label for="tel">Номер телефона:
+                            <input id="tel" type="text" name="tel"/>
+                          </label>
+                          <label for="email">E-mail:
+                            <input id="email" type="text" name="email"/>
+                          </label>
+                          <label for="pass-1">пароль:
+                            <input id="pass-1" type="text" name="pass"/>
+                          </label>
+                          <label for="pass-2">Подтверждение пароля:
+                            <input id="pass-2" type="text" name="pass-to"/>
+                          </label>
+                          <div class="btn-submit">
+                            <input type="submit" value="Зарегистрироваться" class="btn"/>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="popup-cart">
+                  <div title="Закрыть" class="btn-close-popup"><svg class="btn-close-popup-ico" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="16" height="15"><defs id="SvgjsDefs1021"></defs><path id="SvgjsPath1022" d="M294.24 68L299.74 62.49C300.09000000000003 62.15 300.09000000000003 61.6 299.74 61.260000000000005C299.40000000000003 60.910000000000004 298.85 60.910000000000004 298.51 61.260000000000005L293 66.76L287.49 61.260000000000005C287.15000000000003 60.910000000000004 286.6 60.910000000000004 286.26 61.260000000000005C285.90999999999997 61.60000000000001 285.90999999999997 62.150000000000006 286.26 62.49L291.76 68L286.26 73.51C285.90999999999997 73.85000000000001 285.90999999999997 74.4 286.26 74.74000000000001C286.43 74.91000000000001 286.65 75.00000000000001 286.88 75.00000000000001C287.1 75.00000000000001 287.32 74.91000000000001 287.49 74.74000000000001L293 69.24000000000001L298.51 74.74000000000001C298.68 74.91000000000001 298.9 75.00000000000001 299.12 75.00000000000001C299.35 75.00000000000001 299.57 74.91000000000001 299.74 74.74000000000001C300.09000000000003 74.4 300.09000000000003 73.85000000000001 299.74 73.50000000000001Z " fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-285,-60)"></path></svg></div>
+                  <h3>У вас в корзине</h3>
+                  <ul class="in-cart">
+                    <li class="in-cart__item">
+                      <div class="in-cart__inner"><img src="/images/in-cart.png" class="in-cart__img"/></div>
+                      <div class="in-cart__inner in-cart__inner_big">
+                        <div class="in-cart__title">Levante solare 60 Ультратонкие легкие</div>
+                        <div class="in-cart__col"><span>15</span> шт</div>
+                      </div>
+                      <div class="in-cart__inner">
+                        <div class="btn-del"><svg class="btn-del-ico" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="10" height="10"><defs id="SvgjsDefs1001"></defs><path id="SvgjsPath1007" d="M1161.15 301.37C1161.15 301.57 1161.0800000000002 301.75 1160.94 301.89L1159.89 302.94C1159.75 303.08 1159.5700000000002 303.15 1159.3700000000001 303.15C1159.16 303.15 1158.99 303.08 1158.8400000000001 302.94L1156.5800000000002 300.67L1154.3100000000002 302.94C1154.17 303.08 1153.9900000000002 303.15 1153.7900000000002 303.15C1153.5800000000002 303.15 1153.41 303.08 1153.2600000000002 302.94L1152.2200000000003 301.89C1152.0700000000002 301.75 1152.0000000000002 301.57 1152.0000000000002 301.37C1152.0000000000002 301.16 1152.0700000000002 300.99 1152.2200000000003 300.84000000000003L1154.4800000000002 298.58000000000004L1152.2200000000003 296.31000000000006C1152.0700000000002 296.1700000000001 1152.0000000000002 295.99000000000007 1152.0000000000002 295.7900000000001C1152.0000000000002 295.5800000000001 1152.0700000000002 295.4100000000001 1152.2200000000003 295.2600000000001L1153.2600000000002 294.2200000000001C1153.4100000000003 294.0700000000001 1153.5800000000002 294.00000000000006 1153.7900000000002 294.00000000000006C1153.9900000000002 294.00000000000006 1154.1700000000003 294.07000000000005 1154.3100000000002 294.2200000000001L1156.5800000000002 296.4800000000001L1158.8400000000001 294.2200000000001C1158.9900000000002 294.0700000000001 1159.16 294.00000000000006 1159.3700000000001 294.00000000000006C1159.5700000000002 294.00000000000006 1159.7500000000002 294.07000000000005 1159.89 294.2200000000001L1160.94 295.2600000000001C1161.0800000000002 295.4100000000001 1161.15 295.5800000000001 1161.15 295.7900000000001C1161.15 295.99000000000007 1161.0800000000002 296.1700000000001 1160.94 296.31000000000006L1158.67 298.58000000000004L1160.94 300.84000000000003C1161.0800000000002 300.99 1161.15 301.16 1161.15 301.37Z " fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-1152,-294)"></path></svg></div>
+                        <div class="in-cart__price"><span>300</span> руб.</div>
+                      </div>
+                    </li>
+                    <li class="in-cart__item">
+                      <div class="in-cart__inner"><img src="/images/in-cart.png" class="in-cart__img"/></div>
+                      <div class="in-cart__inner in-cart__inner_big">
+                        <div class="in-cart__title">Levante </div>
+                        <div class="in-cart__col"><span>15</span> шт</div>
+                      </div>
+                      <div class="in-cart__inner">
+                        <div class="btn-del"><svg class="btn-del-ico" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="10" height="10"><defs id="SvgjsDefs1001"></defs><path id="SvgjsPath1007" d="M1161.15 301.37C1161.15 301.57 1161.0800000000002 301.75 1160.94 301.89L1159.89 302.94C1159.75 303.08 1159.5700000000002 303.15 1159.3700000000001 303.15C1159.16 303.15 1158.99 303.08 1158.8400000000001 302.94L1156.5800000000002 300.67L1154.3100000000002 302.94C1154.17 303.08 1153.9900000000002 303.15 1153.7900000000002 303.15C1153.5800000000002 303.15 1153.41 303.08 1153.2600000000002 302.94L1152.2200000000003 301.89C1152.0700000000002 301.75 1152.0000000000002 301.57 1152.0000000000002 301.37C1152.0000000000002 301.16 1152.0700000000002 300.99 1152.2200000000003 300.84000000000003L1154.4800000000002 298.58000000000004L1152.2200000000003 296.31000000000006C1152.0700000000002 296.1700000000001 1152.0000000000002 295.99000000000007 1152.0000000000002 295.7900000000001C1152.0000000000002 295.5800000000001 1152.0700000000002 295.4100000000001 1152.2200000000003 295.2600000000001L1153.2600000000002 294.2200000000001C1153.4100000000003 294.0700000000001 1153.5800000000002 294.00000000000006 1153.7900000000002 294.00000000000006C1153.9900000000002 294.00000000000006 1154.1700000000003 294.07000000000005 1154.3100000000002 294.2200000000001L1156.5800000000002 296.4800000000001L1158.8400000000001 294.2200000000001C1158.9900000000002 294.0700000000001 1159.16 294.00000000000006 1159.3700000000001 294.00000000000006C1159.5700000000002 294.00000000000006 1159.7500000000002 294.07000000000005 1159.89 294.2200000000001L1160.94 295.2600000000001C1161.0800000000002 295.4100000000001 1161.15 295.5800000000001 1161.15 295.7900000000001C1161.15 295.99000000000007 1161.0800000000002 296.1700000000001 1160.94 296.31000000000006L1158.67 298.58000000000004L1160.94 300.84000000000003C1161.0800000000002 300.99 1161.15 301.16 1161.15 301.37Z " fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-1152,-294)"></path></svg></div>
+                        <div class="in-cart__price"><span>300</span> руб.</div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="in-cart-sum">
+                    <div class="in-cart-sum__inner">
+                      <div class="left"><span>Итого:</span></div>
+                      <div class="right"><span>14025 </span><span>руб.</span></div>
+                    </div>
+                    <div class="btn-wrap"><a href="#" class="btn btn_black">Перейти в корзину</a><a href="#" class="btn">Оформить заказ </a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="wrap-top">
+        <div class="container content-wrap">
+          <div class="content-top">
+            <ul class="bread-crumbs">
+              <li class="bread-crumbs__item"><a href="#" class="bread-crumbs__link">Главная</a></li>
+              <li class="bread-crumbs__item">
+                <div class="bread-crumbs__link bread-crumbs__link_last">Новости</div>
+              </li>
+            </ul>
+          </div>
+          <div class="cabinet">
+            <div class="cabinet__left">
+              <div class="cabinet-menu-wrap"> 
+                <div class="m-cabinet-menu">Личный кабинет</div>
+                <ul class="cabinet-menu">
+                  <li class="cabinet-menu__item"><a href="#" class="cabinet-menu__link active">Личный кабинет</a></li>
+                  <li class="cabinet-menu__item"><a href="#" class="cabinet-menu__link">Корзина</a></li>
+                  <li class="cabinet-menu__item"><a href="#" class="cabinet-menu__link">Избранное</a></li>
+                  <li class="cabinet-menu__item"><a href="#" class="cabinet-menu__link">История заказов</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cabinet__right">
+              <h1>Личный кабинет</h1>
+              <form>
+                <div class="cabinet-box">
+                  <div class="left">
+                    <h2 class="account__title">Персональная информация </h2>
+                    <label class="account__label">Фамилия
+                      <input type="text" value="Васильевский" placeholder="Васильевский" name="surname" class="accoint__inp">
+                    </label>
+                    <label class="account__label">Имя
+                      <input type="text" placeholder="Дмитрий" value="Дмитрий" name="name" class="accoint__inp">
+                    </label>
+                    <label class="account__label">Отчество
+                      <input type="text" placeholder="Евгеньевич" value="Евгеньевич" name="secondname" class="accoint__inp">
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox"><span>Представитель юр.лица</span>
+                    </label>
+                    <h2 class="account__title account__title_offset">Безопасность</h2>
+                    <label class="account__label">Пароль
+                      <input type="password" placeholder="******" name="password" class="accoint__inp">
+                    </label>
+                    <label class="account__label">Подтверждение пароля
+                      <input type="password" placeholder="******" name="password2" class="accoint__inp">
+                    </label>
+                  </div>
+                  <div class="right">
+                    <h2 class="info-title">Контактная информация </h2>
+                    <label class="account__label">Номер телефона
+                      <input type="text" placeholder="+7(913) 913-15-15" value="+7(913) 913-15-15" name="phone" class="accoint__inp">
+                    </label>
+                    <label class="account__label">Email
+                      <input type="email" placeholder="example@mail.ru" value="example@mail.ru" name="email" class="accoint__inp">
+                    </label>
+                    <label class="account__label">Адрес Доставки
+                      <input type="text" placeholder="Евгеньевич" value="Евгеньевич" name="address" class="accoint__inp">
+                    </label>
+                  </div>
+                </div>
+                <input type="submit" value="Сохранить изменения" class="btn">
+              </form>
+            </div>
+          </div>
+          <div class="content-bottom"></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="footer-flex">
+              <ul class="footer-menu">
+                <li class="footer-menu__title footer-menu__title_about">О нас</li>
+                <li class="footer-menu__item"><a href="#">О компании</a></li>
+                <li class="footer-menu__item"><a href="#">Контакты</a></li>
+                <li class="footer-menu__item"><a href="#">Новости</a></li>
+              </ul>
+              <ul class="footer-menu">
+                <li class="footer-menu__title footer-menu__title_services">Сервис</li>
+                <li class="footer-menu__item"><a href="#">Доставка</a></li>
+                <li class="footer-menu__item"><a href="#">Оплата</a></li>
+                <li class="footer-menu__item"><a href="#">Возврат товара</a></li>
+                <li class="footer-menu__item"><a href="#">Таблица размеров</a></li>
+              </ul>
+              <ul class="footer-menu">
+                <li class="footer-menu__title footer-menu__title_partners">Партнерам</li>
+                <li class="footer-menu__item"><a href="#">Поставщикам</a></li>
+                <li class="footer-menu__item"><a href="#">Рекламодателям</a></li>
+              </ul>
+              <ul class="footer-menu">
+                <li class="footer-menu__title footer-menu__title_buys">Покупки</li>
+                <li class="footer-menu__item"><a href="#">Каталог</a></li>
+                <li class="footer-menu__item"><a href="#">Корзина</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-down">
+          <div class="container">
+            <div class="footer-wrap">
+              <div class="left">
+                <div class="copy">© 2016, ООО «Колготки оптом»: ТК Скайлаин.</div>
+              </div>
+              <div class="right">
+                <div class="devil">Разработка сайта: <a href="http://www.machineheads.ru" class="devil__link">Machineheads</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="hidden">
+    </div>
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&amp;lang=ru-RU" type="text/javascript"></script>
+    <script src="../js/libs.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+/* Cabinet
+================================================================================*/
+.cabinet {
+  .cf;
+  overflow: hidden;
+    &__left {
+      width: 270px;
+      float: left;
+    }
+    &__right {
+      float: right;
+      width: calc(~"100% - 288px");
+    }
+    h1 {
+      font-size: 21px;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: 0.2px;
+      margin-bottom: 25px;
+    }
+    h2 {
+      color: #222;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 0.1px;
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+    .btn {
+      width: 265px;
+    }
+    .account__title_offset {
+      margin-top: 60px;
+    }
+}
+
+/* cabinet-box
+================================================================================*/
+.cabinet-box {
+  .cf;
+  .left {
+    width: 265px;
+    margin-right: 60px;
+    padding-top: 8px;
+  }
+  .right {
+    float: left;
+    width: 325px;
+    padding-left: 60px;
+    border-left: 1px solid #eaeaea;
+    padding-top: 8px;
+  }
+  label {
+    font-size: 12px;
+    color: #737373;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 1;
+  }
+  input {
+    width: 100%;
+    display: block;
+    background: #f6f6f6;
+    color: #222;
+    &.error {
+      border: 1px solid red;
+    }
+  }
+
+}

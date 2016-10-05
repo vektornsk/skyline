@@ -1,0 +1,56 @@
+extends ./tmp/_template.jade
+include ./tmp/_bread-crumbs.jade
+
+block title
+	title Личный кабинет
+block content
+	.wrap-top
+		.container.content-wrap
+			.content-top
+				+bread
+			.cabinet
+				.cabinet__left
+					.cabinet-menu-wrap 
+						.m-cabinet-menu Личный кабинет
+						ul.cabinet-menu
+							li.cabinet-menu__item
+								a.cabinet-menu__link.active(href="#") Личный кабинет
+							li.cabinet-menu__item
+								a.cabinet-menu__link(href="#") Корзина
+							li.cabinet-menu__item
+								a.cabinet-menu__link(href="#") Избранное
+							li.cabinet-menu__item
+								a.cabinet-menu__link(href="#") История заказов
+				.cabinet__right
+					h1 Личный кабинет
+					
+					form
+						.cabinet-box
+							.left
+								h2.account__title Персональная информация 
+								label.account__label Фамилия
+									input.accoint__inp(type="text", value="Васильевский", placeholder="Васильевский", name="surname")
+								label.account__label Имя
+									input.accoint__inp(type="text", placeholder="Дмитрий", value="Дмитрий", name="name")
+								label.account__label Отчество
+									input.accoint__inp(type="text", placeholder="Евгеньевич", value="Евгеньевич", name="secondname")
+								label.checkbox
+									input(type="checkbox")
+									span Представитель юр.лица
+								h2.account__title.account__title_offset Безопасность
+								label.account__label Пароль
+									input.accoint__inp(type="password", placeholder="******", name="password")
+								label.account__label Подтверждение пароля
+									input.accoint__inp(type="password", placeholder="******", name="password2")
+							.right
+								h2.info-title Контактная информация 
+								label.account__label Номер телефона
+									input.accoint__inp(type="text", placeholder="+7(913) 913-15-15", value="+7(913) 913-15-15", name="phone")
+								label.account__label Email
+									input.accoint__inp(type="email", placeholder="example@mail.ru", value="example@mail.ru", name="email")
+								label.account__label Адрес Доставки
+									input.accoint__inp(type="text", placeholder="Евгеньевич", value="Евгеньевич", name="address")
+						input.btn(type="submit", value="Сохранить изменения")
+			.content-bottom
+
+block hidden
