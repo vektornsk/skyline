@@ -2169,6 +2169,11 @@ input.search {
   text-align: center;
   margin-top: 60px;
 }
+@media (max-width: 767px) {
+  .pagination {
+    margin-top: 30px;
+  }
+}
 .pag {
   display: inline-block;
   margin: 0 5px;
@@ -2334,12 +2339,58 @@ input.search {
 ================================================================================*/
 .search-result {
   /*style-catalog-product*/
+  /*menu -catalog media*/
+}
+@media (max-width: 767px) {
+  .search-result {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .search-result .product {
   width: 269px;
+  /*media product*/
 }
 .search-result .product:nth-child(4n) {
   margin-right: 0;
+}
+@media (max-width: 1229px) {
+  .search-result .product:nth-child(3n) {
+    margin-right: 0;
+  }
+  .search-result .product:nth-child(4n) {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .search-result .product:nth-child(3n) {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .search-result .product {
+    margin-right: 0;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 767px) {
+  .search-result .right {
+    float: none;
+  }
+}
+@media (max-width: 767px) {
+  .search-result .SumoSelect {
+    width: 100% !important;
+    margin-top: 25px;
+    margin-left: 0 !important;
+  }
+  .search-result .SumoSelect:first-child {
+    display: none;
+  }
 }
 /*news*/
 /* NEWS -pade
