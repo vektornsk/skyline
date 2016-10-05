@@ -6,10 +6,20 @@
     &__left {
       width: 270px;
       float: left;
+      @media (max-width: 991px) {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+      }
     }
     &__right {
       float: right;
       width: calc(~"100% - 288px");
+      @media (max-width: 991px) {
+        float: none;
+        width: 100%;
+      }
     }
     h1 {
       font-size: 21px;
@@ -29,9 +39,13 @@
     }
     .btn {
       width: 265px;
+        @media (max-width: 991px) {
+          margin-left: 50%;
+          transform: translateX(-50%);
+        }
     }
     .account__title_offset {
-      margin-top: 60px;
+      margin-top: 45px;
     }
 }
 
@@ -39,10 +53,22 @@
 ================================================================================*/
 .cabinet-box {
   .cf;
+  @media (max-width: 767px){
+    width: 265px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .left {
     width: 265px;
     margin-right: 60px;
     padding-top: 8px;
+    @media (max-width: 1229px) {
+      margin-right: 40px;
+    }
+    @media (max-width: 767px){
+      float: none;
+      margin-right: 0;
+    }
   }
   .right {
     float: left;
@@ -50,6 +76,17 @@
     padding-left: 60px;
     border-left: 1px solid #eaeaea;
     padding-top: 8px;
+    @media (max-width: 1229px) {
+      width: 305px;
+      padding-left: 40px;
+    }
+    @media (max-width: 767px){
+      float: none;
+      padding-left: 0;
+      width: 265px;
+      border-left: 0;
+      margin-top: 55px;
+    }
   }
   label {
     font-size: 12px;
