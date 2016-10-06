@@ -138,20 +138,6 @@ $('.select-check').SumoSelect({
 	search: true,
 });
 
-// /* select - selectize.js */
-// $('.select').selectize({
-// 	persist: false,
-// });
-//
-// /*filter-category - jQuery-Tristate-Checkbox-plugin */
-// $('ul.filter-category').tristate();
-//
-//
-// /* .multiple*/
-//
-// $('.multiple').multipleSelect({
-//             filter: true
-//         });
 
 	/* value price*/
 	$('#value').ionRangeSlider({
@@ -176,6 +162,11 @@ $('.select-check').SumoSelect({
 	cutLongString($('.product__name'), 40);
 	cutLongString($('.review__name'), 47);
 
+	/* menu - cabinet */
+
+	$('.m-cabinet-menu').on('click', function(){
+		$(this).next().toggle().find('.active').parent().hide();
+	});
 
 
 
