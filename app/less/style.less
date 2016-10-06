@@ -74,7 +74,7 @@ h1,.h1 {
 	line-height: 1.3;
 	text-transform: uppercase;
 	margin-bottom: 35px;
-	@media (max-width: 320px) and (max-width: 767px) {
+	@media (min-width: 320px) and (max-width: 767px) {
 		font-size: 21px;
 		margin-bottom: 20px;
 	}
@@ -486,6 +486,9 @@ cite,.cite {
 		margin: 10px;
 		cursor: pointer;
 		z-index: 1;
+		@media (max-width: 767px){
+			margin: 7px;
+		}
 		span {
 			display: inline-block;
 			width: 72px;
@@ -592,7 +595,7 @@ cite,.cite {
 /**/
 .m-br {
 	display: none;
-	@media (max-width: 991px) {
+	@media (max-width: 767px) {
 		display: block;
 	}
 }

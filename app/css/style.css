@@ -240,7 +240,7 @@ h1,
   text-transform: uppercase;
   margin-bottom: 35px;
 }
-@media (max-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   h1,
   .h1 {
     font-size: 21px;
@@ -636,6 +636,11 @@ cite span,
   cursor: pointer;
   z-index: 1;
 }
+@media (max-width: 767px) {
+  .pay__item {
+    margin: 7px;
+  }
+}
 .pay__item span {
   display: inline-block;
   width: 72px;
@@ -749,7 +754,7 @@ cite span,
 .m-br {
   display: none;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .m-br {
     display: block;
   }
@@ -2692,11 +2697,19 @@ input.search {
   font-size: 21px;
   font-weight: 400;
   letter-spacing: 0.18px;
-  line-height: 1;
+  line-height: 1.5;
   text-transform: uppercase;
 }
 .order__payment {
   margin-top: 18px;
+}
+@media (max-width: 767px) {
+  .order .btn {
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
 }
 /* LK */
 /* Cabinet

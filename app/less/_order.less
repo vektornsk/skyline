@@ -12,10 +12,16 @@
     font-size: 21px;
     font-weight: 400;
     letter-spacing: 0.18px;
-    line-height: 1;
+    line-height: 1.5;
     text-transform: uppercase;
   }
   &__payment {
     margin-top: 18px;
+  }
+  .btn {
+    @media (max-width: 767px) {
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
