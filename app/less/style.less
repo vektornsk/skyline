@@ -469,6 +469,48 @@ cite,.cite {
 .gray {
 	color: #757575
 }
+/*pay order*/
+.pay {
+	font-size: 12px;
+	color: #737373;
+	line-height: 1;
+	font-weight: 400;
+	letter-spacing: 0.1px;
+	text-transform: uppercase;
+	vertical-align: middle;
+	&__item {
+		display: inline-block;
+		vertical-align: middle;
+		width: 72px;
+		height: 60px;
+		margin: 10px;
+		cursor: pointer;
+		z-index: 1;
+		span {
+			display: inline-block;
+			width: 72px;
+			height: 60px;
+		}
+		input[type="radio"] {
+			width: 0px;
+			height: 0px;
+			&:checked {
+				& + span {
+					border: 1px solid #a6a;
+				}
+			}
+		}
+	}
+}
+.pay-card {
+	background: url(../images/card.png) no-repeat center;
+}
+.pay-ya {
+	background: url(../images/ya.png) no-repeat center;
+}
+.pay-wm {
+	background: url(../images/wm.png) no-repeat center;
+}
 
 /* Include Style
 ================================================================================*/
@@ -493,14 +535,15 @@ cite,.cite {
 @import "_review";
 @import "_filter";
 @import "_search-result";
+@import "_news";
+@import "_order";
 /* LK */
 @import "_cabinet";
 @import "_cabinet-menu";
 @import "_cart";
 @import "_liked";
 @import "_history";
-/*news*/
-@import "_news";
+
 
 /* @MEDIA */
 @import "media";
