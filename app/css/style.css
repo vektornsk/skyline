@@ -2859,24 +2859,64 @@ input.search {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 .history__item span {
   font-weight: 500;
+}
+@media (max-width: 767px) {
+  .history__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: left;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    -ms-grid-row-align: flex-start;
+    align-items: flex-start;
+  }
 }
 .history__number {
   -webkit-flex-basis: 51px;
   -ms-flex-preferred-size: 51px;
   flex-basis: 51px;
 }
+@media (max-width: 767px) {
+  .history__number {
+    -webkit-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    margin-bottom: 10px;
+  }
+}
 .history__date {
-  -webkit-flex-basis: 65px;
-  -ms-flex-preferred-size: 65px;
-  flex-basis: 65px;
+  -webkit-flex-basis: 63px;
+  -ms-flex-preferred-size: 63px;
+  flex-basis: 63px;
+}
+@media (max-width: 767px) {
+  .history__date {
+    -webkit-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    margin-bottom: 10px;
+  }
 }
 .history__product-num {
   -webkit-flex-basis: 140px;
   -ms-flex-preferred-size: 140px;
   flex-basis: 140px;
+}
+@media (max-width: 767px) {
+  .history__product-num {
+    -webkit-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    margin-bottom: 10px;
+  }
 }
 .history__address {
   text-transform: none;
@@ -2885,6 +2925,15 @@ input.search {
   flex-basis: 230px;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .history__address {
+    -webkit-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+}
 .history__status {
   text-transform: none;
   font-weight: 600;
@@ -2892,6 +2941,17 @@ input.search {
   -ms-flex-preferred-size: 65px;
   flex-basis: 65px;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .history__status {
+    -webkit-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 11px;
+    right: 11px;
+  }
 }
 /*news*/
 /* NEWS -pade

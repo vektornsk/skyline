@@ -13,28 +13,59 @@
     font-weight: 400;
     margin-bottom: 10px;
     align-items: center;
+    position: relative;
     span {
       font-weight: 500;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+      text-align: left;
+      align-items: flex-start;
+
     }
   }
   &__number {
     flex-basis: 51px;
+    @media (max-width: 767px) {
+      flex-basis: auto;
+      margin-bottom: 10px;
+    }
   }
   &__date {
-    flex-basis: 65px;
+    flex-basis: 63px;
+    @media (max-width: 767px) {
+      flex-basis: auto;
+      margin-bottom: 10px;
+    }
   }
   &__product-num {
     flex-basis: 140px;
+    @media (max-width: 767px) {
+      flex-basis: auto;
+      margin-bottom: 10px;
+    }
   }
   &__address {
     text-transform: none;
     flex-basis: 230px;
     text-align: center;
+    @media (max-width: 767px) {
+      flex-basis: auto;
+      margin-bottom: 10px;
+      text-align: left;
+    }
   }
   &__status {
     text-transform: none;
     font-weight: 600;
     flex-basis: 65px;
     text-align: center;
+    @media (max-width: 767px) {
+      flex-basis: auto;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 11px;
+      right: 11px;
+    }
   }
 }
