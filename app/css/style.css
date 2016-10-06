@@ -497,9 +497,6 @@ cite span,
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-.SumoSelect .optWrapper.multiple .options li.opt.selected span i {
-  background-color: #a6a;
-}
 .SumoSelect .optWrapper .options {
   background-color: #f7f7f7;
   -webkit-border-radius: 0;
@@ -523,6 +520,24 @@ cite span,
 }
 .SumoSelect .optWrapper .options li label {
   color: #333;
+}
+/*select checkbox*/
+.SumoSelect > .optWrapper.multiple > .options li.opt span i,
+.SumoSelect .select-all > span i {
+  border: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  width: 10px;
+  height: 10px;
+  background: url(../images/checkbox.png);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.SumoSelect > .optWrapper.multiple > .options li.opt.selected span i,
+.SumoSelect .select-all.selected > span i,
+.SumoSelect .select-all.partial > span i {
+  background: url(../images/checkbox.png);
+  background-position: 0 -16px;
 }
 /* checkbox -style
 ================================================================================*/
