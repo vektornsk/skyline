@@ -657,6 +657,94 @@ cite span,
 .pay-wm {
   background: url(../images/wm.png) no-repeat center;
 }
+/* button plus */
+.btn-calc {
+  zoom: 1;
+  width: 95px;
+  height: 55px;
+  border: 1px solid #efefef;
+  overflow: hidden;
+}
+.btn-calc:before,
+.btn-calc:after {
+  content: "";
+  display: table;
+}
+.btn-calc:after {
+  clear: both;
+}
+.btn-calc__left {
+  float: left;
+  width: 65px;
+  height: 100%;
+  position: relative;
+  border-right: 1px solid #efefef;
+}
+.btn-calc__left input {
+  opacity: 0;
+}
+.btn-calc__left span {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.btn-calc__right {
+  float: right;
+  width: -webkit-calc(100% - 65px);
+  width: calc(100% - 65px);
+}
+.btn-calc__plus {
+  width: 100%;
+  height: 27px;
+  cursor: pointer;
+  border-bottom: 1px solid #efefef;
+  position: relative;
+}
+.btn-calc__plus:hover:after {
+  border-color: transparent transparent #ecaa2d transparent;
+}
+.btn-calc__plus:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 0 4.5px 6px 4.5px;
+  border-color: transparent transparent #222 transparent;
+}
+.btn-calc__minus {
+  width: 100%;
+  height: 27px;
+  cursor: pointer;
+  position: relative;
+}
+.btn-calc__minus:hover:after {
+  border-color: #ecaa2d transparent transparent transparent;
+}
+.btn-calc__minus:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 6px 4.5px 0 4.5px;
+  border-color: #222 transparent transparent transparent;
+}
 /* Include Style
 ================================================================================*/
 /* header
@@ -2928,9 +3016,9 @@ input.search {
   flex-basis: 117px;
 }
 .cart-item_calc {
-  -webkit-flex-basis: 70px;
-  -ms-flex-preferred-size: 70px;
-  flex-basis: 70px;
+  -webkit-flex-basis: 95px;
+  -ms-flex-preferred-size: 95px;
+  flex-basis: 95px;
 }
 .cart-item_price {
   -webkit-flex-basis: 121px;
