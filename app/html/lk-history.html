@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content ie="edge">
-    <title>Личный кабинет</title>
+    <title>История заказов</title>
     <meta name="description" content="">
     <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -292,56 +292,42 @@
           <div class="cabinet">
             <div class="cabinet__left">
               <div class="cabinet-menu-wrap"> 
-                <div class="m-cabinet-menu">Личный кабинет</div>
+                <div class="m-cabinet-menu">История заказов</div>
                 <ul class="cabinet-menu">
-                  <li class="cabinet-menu__item"><a href="#" class="cabinet-menu__link active">Личный кабинет</a></li>
+                  <li class="cabinet-menu__item"><a href="#" class="cabinet-menu__link">Личный кабинет</a></li>
                   <li class="cabinet-menu__item"><a href="#" class="cabinet-menu__link">Корзина</a></li>
                   <li class="cabinet-menu__item"><a href="#" class="cabinet-menu__link">Избранное</a></li>
-                  <li class="cabinet-menu__item"><a href="#" class="cabinet-menu__link">История заказов</a></li>
+                  <li class="cabinet-menu__item"><a href="#" class="cabinet-menu__link active">История заказов</a></li>
                 </ul>
               </div>
             </div>
             <div class="cabinet__right">					
-              <form>
-                <div class="cabinet-box">
-                  <h1>Личный кабинет</h1>
-                  <div class="left">
-                    <h2 class="account__title">Персональная информация </h2>
-                    <label class="account__label">Фамилия
-                      <input type="text" value="Васильевский" placeholder="Васильевский" name="surname" class="accoint__inp">
-                    </label>
-                    <label class="account__label">Имя
-                      <input type="text" placeholder="Дмитрий" value="Дмитрий" name="name" class="accoint__inp">
-                    </label>
-                    <label class="account__label">Отчество
-                      <input type="text" placeholder="Евгеньевич" value="Евгеньевич" name="secondname" class="accoint__inp">
-                    </label>
-                    <label class="checkbox">
-                      <input type="checkbox"><span>Представитель юр.лица</span>
-                    </label>
-                    <h2 class="account__title account__title_offset">Безопасность</h2>
-                    <label class="account__label">Пароль
-                      <input type="password" placeholder="******" name="password" class="accoint__inp">
-                    </label>
-                    <label class="account__label">Подтверждение пароля
-                      <input type="password" placeholder="******" name="password2" class="accoint__inp">
-                    </label>
-                  </div>
-                  <div class="right">
-                    <h2 class="info-title">Контактная информация </h2>
-                    <label class="account__label">Номер телефона
-                      <input type="text" placeholder="+7(913) 913-15-15" value="+7(913) 913-15-15" name="phone" class="accoint__inp">
-                    </label>
-                    <label class="account__label">Email
-                      <input type="email" placeholder="example@mail.ru" value="example@mail.ru" name="email" class="accoint__inp">
-                    </label>
-                    <label class="account__label">Адрес Доставки
-                      <input type="text" placeholder="Евгеньевич" value="Евгеньевич" name="address" class="accoint__inp">
-                    </label>
-                  </div>
-                </div>
-                <input type="submit" value="Сохранить изменения" class="btn">
-              </form>
+              <div class="cabinet-box history-wrap">
+                <h1>История заказов</h1>
+                <ul class="history">
+                  <li class="history__item">
+                    <div class="history__number"><span>№</span> 0001</div>
+                    <div class="hustory__date"><span>27.09.2016</span></div>
+                    <div class="history__product-num">Кол-во Позиций: <span>55</span></div>
+                    <div class="history__address">г.Красноярск, ул. Кирова 64, офис 101</div>
+                    <div class="history__status"><span>Завершен</span></div>
+                  </li>
+                  <li class="history__item">
+                    <div class="history__number"><span>№</span> 0001</div>
+                    <div class="hustory__date"><span>27.09.2016</span></div>
+                    <div class="history__product-num">Кол-во Позиций: <span>55</span></div>
+                    <div class="history__address">г.Красноярск, ул. КироваКироваКирова 164, офис 101</div>
+                    <div class="history__status"><span>Оплачен</span></div>
+                  </li>
+                  <li class="history__item">
+                    <div class="history__number"><span>№</span> 00012</div>
+                    <div class="hustory__date"><span>27.09.2016</span></div>
+                    <div class="history__product-num">Кол-во Позиций: <span>1556</span></div>
+                    <div class="history__address">г.КрасноярскКрасноярск, ул. КироваКироваКирова 164, офис 101</div>
+                    <div class="history__status"><span>Отправлен</span></div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="content-bottom"></div>
