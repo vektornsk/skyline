@@ -3111,17 +3111,37 @@ input.search {
 #form-call:after {
   clear: both;
 }
+@media (max-width: 767px) {
+  #form-call {
+    padding: 15px;
+    text-align: center;
+  }
+}
 #form-call h1 {
   font-size: 21px;
+  text-align: left;
 }
 #form-call .left {
   width: 40%;
 }
+@media (max-width: 767px) {
+  #form-call .left {
+    float: none;
+    width: 100%;
+  }
+}
 #form-call .right {
   width: 56%;
 }
+@media (max-width: 767px) {
+  #form-call .right {
+    float: none;
+    width: 100%;
+  }
+}
 #form-call label {
   color: #222;
+  text-align: left;
 }
 #form-call input:not(.btn) {
   background-color: #f6f6f6;
@@ -3135,6 +3155,12 @@ input.search {
   margin-top: 23px;
   height: 42px;
   line-height: 42px;
+}
+@media (max-width: 767px) {
+  #form-call .btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /* fancy style*/
 .form-fancy .fancybox-close {
