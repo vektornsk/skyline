@@ -177,7 +177,7 @@ $('.select-check').SumoSelect({
 	/* popup form fancybox*/
 
 	$('.popup-form').fancybox({
-		wrapCSS: 'form-fancy'
+		wrapCSS: 'form-fancy',
 	});
 
 }); /* end $*/
