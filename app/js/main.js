@@ -168,7 +168,9 @@ $('.select-check').SumoSelect({
 		$(this).next().toggle().find('.active').parent().hide();
 	});
 
+	/* popup img fancybox */
 
+	$('.popup-img').fancybox();
 
 
 

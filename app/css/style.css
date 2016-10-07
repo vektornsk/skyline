@@ -762,6 +762,26 @@ cite span,
 .bold {
   font-weight: 600;
 }
+/* fancyBox */
+#fancybox-loading,
+.fancybox-close,
+.fancybox-prev span,
+.fancybox-next span {
+  background-image: url('../images/fancyBox/fancybox_sprite.png');
+}
+#fancybox-loading div {
+  background: url('../images/fancyBox/fancybox_loading.gif') center center no-repeat;
+}
+.fancybox-nav {
+  background: transparent url('../images/fancyBox/blank.gif');
+  /* helps IE */
+}
+.fancybox-overlay {
+  background: url('../images/fancyBox/fancybox_overlay.png');
+}
+#fancybox-buttons a {
+  background-image: url('../images/fancyBox/fancybox_buttons.png');
+}
 /* Include Style
 ================================================================================*/
 /* header
