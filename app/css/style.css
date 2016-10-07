@@ -350,6 +350,20 @@ input[type="email"].error,
 input[type="password"].error {
   border: 1px solid red;
 }
+textarea {
+  resize: none;
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding-top: 13px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+textarea.error {
+  border: 1px solid red;
+}
 /* IMAGES
 ================================================================================*/
 .image {
@@ -781,6 +795,16 @@ cite span,
 }
 #fancybox-buttons a {
   background-image: url('../images/fancyBox/fancybox_buttons.png');
+}
+.fancybox-opened .fancybox-skin {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.fancybox-skin {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  color: #222;
+  background: #fff;
 }
 /* Include Style
 ================================================================================*/
@@ -3071,6 +3095,54 @@ input.search {
 }
 .product-color {
   height: 67px;
+}
+/* popup form
+================================================================================*/
+#form-call {
+  zoom: 1;
+  overflow: hidden;
+  padding: 25px;
+}
+#form-call:before,
+#form-call:after {
+  content: "";
+  display: table;
+}
+#form-call:after {
+  clear: both;
+}
+#form-call h1 {
+  font-size: 21px;
+}
+#form-call .left {
+  width: 40%;
+}
+#form-call .right {
+  width: 56%;
+}
+#form-call label {
+  color: #222;
+}
+#form-call input:not(.btn) {
+  background-color: #f6f6f6;
+  color: #222;
+}
+#form-call textarea {
+  background-color: #f6f6f6;
+  height: 127px;
+}
+#form-call .btn {
+  margin-top: 23px;
+  height: 42px;
+  line-height: 42px;
+}
+/* fancy style*/
+.form-fancy .fancybox-close {
+  top: 18px;
+  right: 18px;
+  background: url(../images/close-pink.png) no-repeat;
+  width: 18px;
+  height: 18px;
 }
 /* LK */
 /* Cabinet

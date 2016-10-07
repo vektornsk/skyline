@@ -170,8 +170,14 @@ $('.select-check').SumoSelect({
 
 	/* popup img fancybox */
 
-	$('.popup-img').fancybox();
+	$('.popup-img').fancybox({
+		wrapCSS: 'img-fancy'
+	});
 
+	/* popup form fancybox*/
 
+	$('.popup-form').fancybox({
+		wrapCSS: 'form-fancy'
+	});
 
 }); /* end $*/

@@ -299,7 +299,7 @@
               <li>E-mail: 120070@mail.ru</li>
             </ul>
             <div class="contact__txt">Для обращения воспользуйтесь телефоном или расположенной ниже формой. <br /> Будем рады новым партнерам и клиентам.</div>
-            <div class="contact__btn"><a href="#" class="btn">Оставить сообщение		</a></div>
+            <div class="contact__btn"><a href="#form-call" class="btn popup-form">Оставить сообщение		</a></div>
           </div>
           <div class="content-bottom">						</div>
         </div>
@@ -351,6 +351,28 @@
       </div>
     </footer>
     <div class="hidden">
+      <div id="form-call">
+        <form>
+          <h1>Оставте нам сообщение:</h1>
+          <div class="left">
+            <label>Имя
+              <input type="text" name="name" placeholder="Введите имя">
+            </label>
+            <label>Номер телефона
+              <input type="text" name="phone" placeholder="+7 (___) ___-__-__">
+            </label>
+            <label>E-mail
+              <input type="email" name="email" placeholder="example@mail.ru">
+            </label>
+          </div>
+          <div class="right">
+            <label>Сообщение
+              <textarea placeholder="Введите ваше сообщение"></textarea>
+            </label>
+            <input type="submit" value="отправить" class="btn">
+          </div>
+        </form>
+      </div>
     </div>
     <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&amp;lang=ru-RU" type="text/javascript"></script>
     <script src="../js/libs.js"></script>
