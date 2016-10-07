@@ -18,12 +18,22 @@
     float: left;
     width: 400px;
     padding-right: 35px;
+    @media (max-width: 991px) {
+      width: 280px;
+      padding-right: 20px;
+    }
   }
   &__right {
     float: left;
     width: calc(~"100% - 400px");
+    @media (max-width: 991px) {
+      width: calc(~"100% - 280px");
+    }
     .card__inner {
       width: 545px;
+      @media (max-width: 991px) {
+        width: auto;
+      }
     }
   }
 }
@@ -35,6 +45,9 @@
     width: 100%;
     object-fit: cover;
     height: 460px;
+    @media (max-width: 991px) {
+      height: auto;
+    }
   }
 }
 .card-img-carousel {
@@ -43,13 +56,15 @@
   bottom: 0;
   padding: 5px;
   &__item {
-    height: 113px;
     margin: 0 5px 5px;
     display: inline-block;
     img {
       width: 90px;
       height: auto;
       object-fit: cover;
+      @media (max-width: 991px) {
+        width: 50px;
+      }
     }
   }
 }
@@ -91,6 +106,10 @@
     float: left;
     width: 285px;
     padding-right: 40px;
+    @media (max-width: 991px) {
+      width: 260px;
+      padding-right: 20px;
+    }
     .SumoSelect {
       width: 100%;
     }
@@ -98,6 +117,15 @@
   &__right {
     float: left;
     width: calc(~"100% - 285px");
+    @media (max-width: 991px) {
+      width: calc(~"100% - 260px");
+      .btn {
+        padding: 0 10px;
+      }
+      .product__liked {
+        margin-right: 0;
+      }
+    }
   }
 }
 .card-setting-top {
@@ -142,6 +170,10 @@
     color: #222;
     line-height: 1.5;
     text-transform: uppercase;
+    @media (max-width: 991px) {
+      font-size: 34px;
+      line-height: 1.6;
+    }
   }
   &__num-one {
     color: #c6c6c6;
