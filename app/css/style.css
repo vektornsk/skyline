@@ -2425,6 +2425,14 @@ input.search {
   border: 1px solid #efefef;
   margin-top: 70px;
 }
+@media (max-width: 767px) {
+  .review {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+}
 .review__title {
   color: #333;
   text-transform: uppercase;
@@ -2728,6 +2736,13 @@ input.search {
 .card-wrap:after {
   clear: both;
 }
+@media (max-width: 767px) {
+  .card-wrap {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .card-wrap h1 {
   color: #222;
   font-size: 36px;
@@ -2735,6 +2750,12 @@ input.search {
   letter-spacing: 0.3px;
   line-height: 1.3;
   margin-bottom: 25px;
+}
+@media (max-width: 767px) {
+  .card-wrap h1 {
+    color: #83a25c;
+    font-size: 21px;
+  }
 }
 .card__left {
   float: left;
@@ -2747,8 +2768,15 @@ input.search {
     padding-right: 20px;
   }
 }
+@media (max-width: 767px) {
+  .card__left {
+    float: none;
+    width: 100%;
+    padding-right: 0;
+  }
+}
 .card__right {
-  float: left;
+  float: right;
   width: -webkit-calc(100% - 400px);
   width: calc(100% - 400px);
 }
@@ -2756,6 +2784,12 @@ input.search {
   .card__right {
     width: -webkit-calc(100% - 280px);
     width: calc(100% - 280px);
+  }
+}
+@media (max-width: 767px) {
+  .card__right {
+    float: none;
+    width: 100%;
   }
 }
 .card__right .card__inner {
@@ -2767,6 +2801,15 @@ input.search {
   }
 }
 /*card-left-block*/
+.m-product-img {
+  display: none;
+}
+@media (max-width: 767px) {
+  .m-product-img {
+    display: block;
+    margin: 10px 0 20px;
+  }
+}
 .card-img {
   position: relative;
 }
@@ -2778,6 +2821,11 @@ input.search {
 @media (max-width: 991px) {
   .card-img img {
     height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .card-img img {
+    display: none;
   }
 }
 .card-img-carousel {
@@ -2802,6 +2850,11 @@ input.search {
 }
 .info-delivery {
   margin-top: 45px;
+}
+@media (max-width: 767px) {
+  .info-delivery {
+    margin-top: 25px;
+  }
 }
 .info-delivery__title {
   font-size: 12px;
@@ -2850,6 +2903,13 @@ input.search {
     padding-right: 20px;
   }
 }
+@media (max-width: 767px) {
+  .card-setting__left {
+    float: none;
+    width: 100%;
+    padding-right: 0;
+  }
+}
 .card-setting__left .SumoSelect {
   width: 100%;
 }
@@ -2868,6 +2928,15 @@ input.search {
   }
   .card-setting__right .product__liked {
     margin-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .card-setting__right {
+    float: none;
+    width: 100%;
+  }
+  .card-setting__right .btn {
+    padding: 0 40px;
   }
 }
 .card-setting-top {
@@ -2908,8 +2977,21 @@ input.search {
   letter-spacing: 0.1px;
   line-height: 1;
 }
+@media (max-width: 767px) {
+  .card-col {
+    display: inline-block;
+  }
+}
 .card-col .btn-calc {
   margin-top: 15px;
+}
+@media (max-width: 767px) {
+  .card-price {
+    display: inline-block;
+    float: right;
+    margin-top: 34px;
+    text-align: right;
+  }
 }
 .card-price__num {
   font-size: 36px;
@@ -2952,6 +3034,11 @@ input.search {
 .card-color {
   border: 1px solid #efefef;
   margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .card-color {
+    margin-top: 10px;
+  }
 }
 .card-color__title {
   height: 48px;
