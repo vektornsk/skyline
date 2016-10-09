@@ -2936,6 +2936,7 @@ label.color span {
 .card-img-carousel__item {
   margin: 0 5px 5px;
   display: inline-block;
+  cursor: pointer;
 }
 .card-img-carousel__item img {
   width: 90px;

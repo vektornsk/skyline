@@ -180,4 +180,18 @@ $('.select-check').SumoSelect({
 		wrapCSS: 'form-fancy',
 	});
 
+	/* card -img */
+
+	$('.card-img-carousel__item').hover(
+		function(){
+			var img = $(this).children().attr('src');
+			var imgBig = $('.card-img__big').attr('src');
+			$(this).parents('.card-img').find('.card-img__big').attr('src', img);
+			$(this).children().attr('src', imgBig);
+		},
+		function() {
+
+		}
+	);
+
 }); /* end $*/
