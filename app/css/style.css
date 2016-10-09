@@ -2273,6 +2273,64 @@ input.search {
     margin-bottom: 35px;
   }
 }
+@media screen and (max-width: 991px) {
+  .catalog__left {
+    display: none;
+    position: absolute;
+    width: 280px;
+    background: #fff;
+    z-index: 5;
+    margin-top: 170px;
+  }
+  .catalog__right {
+    width: 100%;
+  }
+}
+/* mobal catalog */
+.m-filter-catalog {
+  display: none;
+  height: 43px;
+  text-align: center;
+  background: #a6a;
+  border: none;
+  margin: 20px 0;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  padding: 0 40px;
+  text-transform: uppercase;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  height: 42px;
+  line-height: 42px;
+  cursor: pointer;
+}
+.m-filter-catalog:hover {
+  background: #ecaa2d;
+}
+.m-filter-catalog_black {
+  background: transparent;
+  border: 1px solid #fff;
+}
+.m-filter-catalog_pink {
+  background: transparent;
+  border: 1px solid #a6a;
+}
+.m-filter-catalog_pink:hover {
+  background: #a6a;
+}
+.m-filter-catalog_pink:hover span {
+  color: #fff;
+}
+.m-filter-catalog_pink:hover svg path {
+  fill: #fff;
+}
+@media (max-width: 991px) {
+  .m-filter-catalog {
+    display: inline-block;
+  }
+}
 /* product
 =================================================================================*/
 .product-list {
@@ -2642,9 +2700,37 @@ label.color span {
 }
 .filter__box {
   padding: 20px;
+  max-height: 250px;
+  overflow: hidden;
+  overflow-y: visible;
 }
 .filter .SumoSelect {
   width: 100% !important;
+}
+/* filter -link*/
+.filter-category__link {
+  display: inline-block;
+  position: relative;
+  padding-left: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #222;
+}
+.filter-category__link:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: url(../images/checkbox.png) no-repeat;
+}
+.filter-category__link.select:after {
+  background-position: 0 -16px;
 }
 /* search-result
 ================================================================================*/

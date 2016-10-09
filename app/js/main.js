@@ -194,4 +194,9 @@ $('.select-check').SumoSelect({
 		}
 	);
 
+	/* pokaz filter*/
+	$('.m-filter-catalog').on('click', function(){
+		$('.catalog__left').toggle();
+	});
+
 }); /* end $*/

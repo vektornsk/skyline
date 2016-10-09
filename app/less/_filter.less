@@ -15,9 +15,39 @@
   }
   &__box {
     padding: 20px;
+    max-height: 250px;
+    overflow: hidden;
+    overflow-y: visible;
   }
 
   .SumoSelect {
     width: 100% !important;
+  }
+}
+/* filter -link*/
+.filter-category__link {
+  display: inline-block;
+  position: relative;
+  padding-left: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #222;
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: url(../images/checkbox.png) no-repeat;
+  }
+  &.select {
+    &:after {
+      background-position: 0 -16px;
+    }
   }
 }

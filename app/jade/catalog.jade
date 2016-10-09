@@ -15,15 +15,13 @@ block content
 						.filter__box
 							ul.filter-category
 								li
-									input(type="checkbox")
-									label checkbox
-									ul
-										li
-											input(type="checkbox")
-											label checkbox
-										li
-											input(type="checkbox")
-											label checkbox
+									a.filter-category__link.select(href="#") Колготки
+								li
+									a.filter-category__link(href="#") Чулки
+								li
+									a.filter-category__link(href="#") Носочки/гольфы/следики
+								li
+									a.filter-category__link(href="#") Ботфорты/гетры
 					.filter
 						.filter__title Цена
 						.filter__box
@@ -55,6 +53,7 @@ block content
 							h1 Каталог товаров
 							.menu-catalog__resul Всего показано товаров: <span>1000</span>
 						.right
+							.m-filter-catalog Показать фильтр
 							.select-wrap.select-wrap_line
 								select.select(placeholder="Товаров на странице: 12")
 									option

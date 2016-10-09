@@ -66,3 +66,29 @@
     }
   }
 }
+
+@media screen and (max-width: 991px) {
+  .catalog__left {
+    display: none;
+    position: absolute;
+    width: 280px;
+    background: #fff;
+    z-index: 5;
+    margin-top: 170px;
+  }
+  .catalog__right {
+    width: 100%;
+  }
+}
+
+/* mobal catalog */
+.m-filter-catalog {
+  display: none;
+  .btn;
+  height: 42px;
+  line-height: 42px;
+  cursor: pointer;
+  @media (max-width: 991px){
+    display: inline-block;
+  }
+}
