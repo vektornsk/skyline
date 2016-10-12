@@ -65,6 +65,14 @@
     letter-spacing: 0.1px;
     line-height: 1.5;
     text-transform: uppercase;
+    &_old {
+      text-decoration: line-through;
+      font-weight: 400;
+    }
+    &_new {
+      font-size: 14px;
+      letter-spacing: 0.12px;
+    }
   }
   &__btn-wrap {
     .cf;
@@ -82,12 +90,30 @@
   margin-left: 14px;
   &:hover {
     svg {
-      path {
+      .st1 {
         fill: @color-hover;
       }
     }
   }
+  &.like {
+    svg {
+      .st0 {
+        fill: #AA66AA;
+      }
+      .st1 {
+        fill: #AA66AA;
+      }
+    }
+  }
    svg {
+     width: 16px;
+     height: 14px;
+     .st0 {
+        fill:#FFFFFF;
+     }
+     .st1 {
+       fill:#222;
+     }
       position: relative;
       top: 2px;
       path {
@@ -113,6 +139,25 @@
      padding-left: 20px;
    }
 }
+/* sale*/
+.product__sale {
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  text-align: center;
+    span {
+      display: inline-block;
+      padding: 3px 24px;
+      color: #fff;
+      font-size: 12px;
+      letter-spacing: 0.1px;
+      line-height: 1;
+      font-weight: 400;
+      background: @color-hover;
+      text-transform: uppercase;
+    }
+}
+
 /* product - color
 ================================================================================*/
 
