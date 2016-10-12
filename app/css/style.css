@@ -2772,6 +2772,21 @@ label.color span {
 .filter-category__link.select:after {
   background-position: 0 -16px;
 }
+/* filter checkbox */
+.filter .checkbox {
+  margin-top: 0;
+}
+.filter .checkbox span {
+  margin-left: 0;
+  padding-left: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #222;
+  cursor: pointer;
+}
 /* search-result
 ================================================================================*/
 .search-result {
