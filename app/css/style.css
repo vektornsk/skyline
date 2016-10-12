@@ -2523,7 +2523,6 @@ input.search {
 }
 .product-color__item {
   float: left;
-  padding: 16px 2px;
 }
 label.color {
   position: relative;
@@ -3242,6 +3241,14 @@ label.color span {
   line-height: 1;
   text-transform: uppercase;
 }
+.card-price__num-sale {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  line-height: 1;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
 .card-description {
   margin-top: 20px;
 }
@@ -3277,7 +3284,15 @@ label.color span {
   padding-left: 20px;
 }
 .product-color {
-  height: 67px;
+  padding: 13px 4px;
+}
+/* card - sale*/
+.card-sale {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.12px;
+  line-height: 1;
+  color: #ecaa2d;
 }
 /* popup form
 ================================================================================*/
