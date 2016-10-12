@@ -3606,7 +3606,8 @@ label.color span {
   font-weight: 500;
 }
 .lk-cart .btn-wrap .total span {
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 500;
 }
 @media (max-width: 991px) {
   .lk-cart .btn-wrap .total {
@@ -3615,6 +3616,7 @@ label.color span {
 }
 .lk-cart .btn-wrap .btn {
   display: inline-block;
+  width: 190px;
 }
 @media (max-width: 991px) {
   .lk-cart .btn-wrap .btn {
@@ -3775,6 +3777,20 @@ label.color span {
   -webkit-flex-basis: 121px;
   -ms-flex-preferred-size: 121px;
   flex-basis: 121px;
+}
+.cart-item_price .cart-price {
+  font-weight: 500;
+  font-size: 14px;
+}
+.cart-item_price .cart-price_old {
+  font-weight: 400;
+  text-decoration: line-through;
+  line-height: 1.5;
+  font-size: 12px;
+}
+.cart-item_price .cart-price_new {
+  font-weight: 500;
+  letter-spacing: 0.12px;
 }
 @media (max-width: 767px) {
   .cart-item_price {

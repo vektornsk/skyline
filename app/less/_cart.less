@@ -16,7 +16,8 @@
       letter-spacing: 0.1px;
       font-weight: 500;
       span {
-        font-weight: 400;
+        font-size: 14px;
+        font-weight: 500;
       }
       @media (max-width: 991px){
         margin-right: 0;
@@ -24,6 +25,7 @@
     }
     .btn {
       display: inline-block;
+      width: 190px;
       @media (max-width: 991px){
         margin-left: 0;
         transform: none;
@@ -125,6 +127,20 @@
   }
   &_price {
     flex-basis: 121px;
+    .cart-price {
+      font-weight: 500;
+      font-size: 14px;
+      &_old {
+        font-weight: 400;
+        text-decoration: line-through;
+        line-height: 1.5;
+        font-size: 12px;
+      }
+      &_new {
+        font-weight: 500;
+        letter-spacing: 0.12px;
+      }
+    }
     @media (max-width: 767px){
       order: 3;
       text-align: left;
