@@ -52,9 +52,11 @@
   }
 }
 /* filter checkbox */
-.filter {
+.filter, .filter-group {
   .checkbox {
     margin-top: 0;
+    display: block;
+    cursor: pointer;
     span {
       margin-left: 0;
       padding-left: 15px;
@@ -65,6 +67,72 @@
       text-transform: uppercase;
       color: #222;
       cursor: pointer;
+    }
+  }
+}
+.filter-group {
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  cursor: pointer;
+  &__title {
+    border: 1px solid #efefef;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 17px 20px;
+    &.active {
+        &::after {
+          border-width: 0 4px 6px 4px;
+          border-color: transparent transparent #222 transparent;
+        }
+    }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 4px 0 4px;
+      border-color: #222 transparent transparent transparent;
+      top: 23px;
+      right: 20px;
+    }
+  }
+  &__search {
+    background-color: #f7f7f7;
+    border-radius: 26px;
+    border: 1px solid #efefef;
+    margin-bottom: 15px;
+    position: relative;
+    input[type="text"] {
+      margin: 0;
+      padding-right: 30px;
+      text-transform: uppercase;
+    }
+    .search-btn-wrap {
+      position: absolute;
+      top: 6px;
+      right: 7px;
+      float: none;
+      margin: 0;
+    }
+  }
+  &__inner {
+    border: 1px solid #efefef;
+    border-top: none;
+    padding: 20px;
+    max-height: 330px;
+    overflow: hidden;
+    overflow-y: auto;
+    display: none;
+    &.active {
+      display: block;
     }
   }
 }

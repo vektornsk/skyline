@@ -199,4 +199,9 @@ $('.select-check').SumoSelect({
 		$('.catalog__left').toggle();
 	});
 
+	/* filter-group */
+	$('.filter-group__title').on('click', function(){
+		$(this).toggleClass('active').next().toggleClass('active');
+	});
+
 }); /* end $*/
