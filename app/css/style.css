@@ -768,7 +768,7 @@ cite span,
 .m-br {
   display: none;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .m-br {
     display: block;
   }
