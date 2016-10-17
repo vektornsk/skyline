@@ -500,7 +500,7 @@ cite span,
   border-color: #222 transparent transparent transparent;
 }
 .SumoSelect .SelectBox {
-  padding: 0 0 0 20px;
+  padding: 0 20px 0 20px;
 }
 .SumoSelect .optWrapper {
   top: 40px;
@@ -3050,6 +3050,17 @@ label.color span {
   letter-spacing: 0.18px;
   line-height: 1.5;
   text-transform: uppercase;
+}
+.order__city {
+  margin-top: 40px;
+}
+@media (max-width: 767px) {
+  .order__city {
+    margin-top: 20px;
+  }
+  .order__city .SumoSelect {
+    width: 100%;
+  }
 }
 .order__payment {
   margin-top: 18px;
