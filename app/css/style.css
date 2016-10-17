@@ -2720,6 +2720,18 @@ label.color span {
 .review__liked a:hover .like-ico path {
   fill: #ecaa2d;
 }
+.review__cart {
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 24px;
+  left: 30px;
+  bottom: 20px;
+  z-index: 2;
+}
+.review__cart a:hover .cart-add-ico path {
+  fill: #ecaa2d;
+}
 /* review media */
 @media screen and (max-width: 1229px) {
   .review__item {

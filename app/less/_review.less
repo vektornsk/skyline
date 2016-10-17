@@ -97,6 +97,24 @@
       }
     }
   }
+  &__cart {
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 24px;
+    left: 30px;
+    bottom: 20px;
+    z-index: 2;
+    a {
+      &:hover {
+        .cart-add-ico {
+          path {
+            fill: @color-hover;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* review media */
