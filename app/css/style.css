@@ -815,6 +815,12 @@ cite span,
   width: 100%;
   background: #fff;
   z-index: 10;
+  border-bottom: 2px solid #222;
+}
+@media (max-width: 991px) {
+  .header {
+    border-bottom: none;
+  }
 }
 .header-wrap {
   zoom: 1;
