@@ -293,6 +293,11 @@ h1,
 .btn:hover {
   background: #ecaa2d;
 }
+.btn.null {
+  background: #f7f7f7;
+  color: #222;
+  cursor: default;
+}
 .btn_black {
   background: transparent;
   border: 1px solid #fff;
@@ -2315,6 +2320,11 @@ input.search {
 }
 .m-filter-catalog:hover {
   background: #ecaa2d;
+}
+.m-filter-catalog.null {
+  background: #f7f7f7;
+  color: #222;
+  cursor: default;
 }
 .m-filter-catalog_black {
   background: transparent;

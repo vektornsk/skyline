@@ -206,7 +206,7 @@ $('.select-check').SumoSelect({
 
 	/*null elem*/
 
-	$('a.null').on('click', function(e){
+	$('.null').on('click', function(e){
 		e.preventDefault();
 	});
 
