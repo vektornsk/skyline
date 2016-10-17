@@ -2513,6 +2513,26 @@ input.search {
   background: #ecaa2d;
   text-transform: uppercase;
 }
+.product__sale + .product__nal {
+  top: 35px;
+}
+.product__nal {
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  text-align: center;
+}
+.product__nal span {
+  display: inline-block;
+  padding: 3px 24px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.1px;
+  line-height: 1;
+  font-weight: 400;
+  background-color: #a6a;
+  text-transform: uppercase;
+}
 /* product - color
 ================================================================================*/
 .product-color {
@@ -3390,11 +3410,23 @@ label.color span {
 }
 /* card - sale*/
 .card-sale {
+  display: inline-block;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.12px;
   line-height: 1;
   color: #ecaa2d;
+  margin-right: 20px;
+}
+.card-nal {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.12px;
+  line-height: 1;
+  color: #a6a;
+  margin-right: 20px;
+  text-transform: uppercase;
 }
 /* popup form
 ================================================================================*/
