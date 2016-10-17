@@ -1,0 +1,63 @@
+extends ./tmp/_template.jade
+include ./tmp/_bread-crumbs.jade
+
+block title
+	title Заказ № 001
+block content
+	.wrap-top
+		.container.content-wrap
+			.content-top
+				+bread
+			.cabinet
+				.cabinet__left
+					.cabinet-menu-wrap 
+						.m-cabinet-menu Корзина
+						ul.cabinet-menu
+							li.cabinet-menu__item
+								a.cabinet-menu__link(href="#") Личный кабинет
+							li.cabinet-menu__item
+								a.cabinet-menu__link(href="#") Корзина
+							li.cabinet-menu__item
+								a.cabinet-menu__link(href="#") Избранное
+							li.cabinet-menu__item
+								a.cabinet-menu__link.active(href="#") История заказов
+				.cabinet__right		
+					form
+						.cabinet-box.lk-cart
+							h1 Заказ № 001
+							.cart-box 
+								ul.cart-list.cart-list_title
+									li.cart-item.cart-item_product Товар 
+									li.cart-item.cart-item_title Описание
+									li.cart-item.cart-item_price-one Стоимость (1 шт.) 
+									li.cart-item.cart-item_calc Кол-во 
+									li.cart-item.cart-item_price Общая стоимость 
+									li.cart-item.cart-item_sale.pink  Скидка
+								ul.cart-list
+									li.cart-item.cart-item_product
+										a(href="#")
+											img(src="/images/product-1.png")
+									li.cart-item.cart-item_title LEVANTE SOLARE 60 УЛЬТРАТОНКИЕ ЛЕТНИЕ
+									li.cart-item.cart-item_price-one  250 руб.
+									li.cart-item.cart-item_calc 2
+									li.cart-item.cart-item_price
+										div.cart-price.cart-price_old 500 руб.
+										div.cart-price.cart-price_new 100 руб.
+									li.cart-item.cart-item_sale.pink 20%
+								ul.cart-list
+									li.cart-item.cart-item_product
+										a(href="#")
+											img(src="/images/product-2.png")
+									li.cart-item.cart-item_title LEVANTE SOLARE 60 УЛЬТРАТОНКИЕ ЛЕТНИЕ
+									li.cart-item.cart-item_price-one  250 руб.
+									li.cart-item.cart-item_calc 1
+									li.cart-item.cart-item_price
+										.cart-price 500 руб.
+									li.cart-item.cart-item_sale -
+							.btn-wrap
+								.total Итого: <span>10000 руб.</span>
+								.m-br								
+								input.btn(type="submit", value="Повторить заказ")
+			.content-bottom
+
+block hidden
