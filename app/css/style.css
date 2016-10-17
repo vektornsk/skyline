@@ -2730,8 +2730,16 @@ label.color span {
   bottom: 20px;
   z-index: 2;
 }
-.review__liked a:hover .like-ico path {
+.review__liked a.product__liked {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+}
+.review__liked a.product__liked:hover .like-ico .st0 path {
   fill: #ecaa2d;
+}
+.review__liked a.product__liked svg {
+  top: 0;
 }
 .review__cart {
   display: block;
@@ -2744,6 +2752,12 @@ label.color span {
 }
 .review__cart a:hover .cart-add-ico path {
   fill: #ecaa2d;
+}
+.review__cart a.null {
+  cursor: default;
+}
+.review__cart a.null .cart-add-ico path {
+  fill: #c8c8c8;
 }
 /* review media */
 @media screen and (max-width: 1229px) {

@@ -87,13 +87,19 @@
     left: 0;
     bottom: 20px;
     z-index: 2;
-    a {
+    a.product__liked {
+      display: inline-block;
+      margin: 0;
+      vertical-align: top;
       &:hover {
         .like-ico {
-          path {
+          .st0 path {
             fill: @color-hover;
           }
         }
+      }
+      svg {
+        top: 0;
       }
     }
   }
@@ -110,6 +116,14 @@
         .cart-add-ico {
           path {
             fill: @color-hover;
+          }
+        }
+      }
+      &.null {
+        cursor: default;
+        .cart-add-ico {
+          path {
+            fill: #c8c8c8;
           }
         }
       }

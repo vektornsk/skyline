@@ -204,4 +204,10 @@ $('.select-check').SumoSelect({
 		$(this).toggleClass('active').next().toggleClass('active');
 	});
 
+	/*null elem*/
+
+	$('a.null').on('click', function(e){
+		e.preventDefault();
+	});
+
 }); /* end $*/
