@@ -81,12 +81,24 @@ block content
 								input.accoint__inp(type="text", placeholder="г. Новосибирск, ул. Ленина, 54, кв. 40", value="г. Новосибирск, ул. Ленина, 54, кв. 40", name="address")
 					.order__city
 						.select-wrap.select-wrap_line
-							select.select(placeholder="Способ доставки: Почта Росиии", name="city")
+							select.select(placeholder="Способ доставки:", name="city")
 								option
-								option(value="1") Способ доставки: Почта Росиии
-								option(value="2") Способ доставки: Почта Росиии
-								option(value="3") Способ доставки: Почта Росиии
-								option(value="4") Способ доставки: Почта Росиии
+								option(value="1") Почта Росиии
+								option(value="2") Почта Росиии
+								option(value="3") Транспортная компания
+								option(value="4") Почта Росиии
+					.order__tk
+						span.tk Выберите транспортную компанию:
+						.m-br
+						label.tk__item
+							input(type="radio", name="tk")
+							span.tk__t1(title="1") 1
+						label.tk__item
+							input(type="radio", name="tk")
+							span.tk__t2(title="2") 2
+						label.tk__item
+							input(type="radio", name="tk")
+							span.tk__t3(title="3") 3
 					.order__payment
 						span.pay Выберите способ оплаты:
 						.m-br
