@@ -490,6 +490,7 @@ cite span,
   cursor: pointer;
   font-style: normal !important;
   color: #222 !important;
+  padding-right: 10px;
 }
 .SumoSelect .CaptionCont label {
   border-left: 1px solid #efefef;
@@ -3317,7 +3318,7 @@ label.color span {
 }
 .card-setting-top {
   zoom: 1;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 .card-setting-top:before,
 .card-setting-top:after {
@@ -3329,13 +3330,13 @@ label.color span {
 }
 .card-setting-top .SumoSelect {
   float: left;
-  width: 125px;
+  width: 170px;
   min-width: 120px;
 }
 .card-setting-top .tbl-size {
   float: right;
   display: inline-block;
-  width: 103px;
+  width: 70px;
   text-transform: uppercase;
   line-height: 1.2;
   letter-spacing: 0.1px;
@@ -3417,7 +3418,7 @@ label.color span {
 }
 .card-color {
   border: 1px solid #efefef;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 @media (max-width: 767px) {
   .card-color {
