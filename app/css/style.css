@@ -669,6 +669,7 @@ cite span,
 .pay__item input[type="radio"] {
   width: 0px;
   height: 0px;
+  display: none !important;
 }
 .pay__item input[type="radio"]:checked + span {
   border: 1px solid #a6a;
@@ -714,6 +715,7 @@ cite span,
 .tk__item input[type="radio"] {
   width: 0px;
   height: 0px;
+  display: none !important;
 }
 .tk__item input[type="radio"]:checked + span {
   border: 1px solid #a6a;
@@ -1918,7 +1920,7 @@ input.search {
 }
 .search-ico {
   position: absolute;
-  width: 17px;
+  width: 18px;
   height: 16px;
   top: 50%;
   left: 50%;
@@ -2492,7 +2494,7 @@ input.search {
   overflow: hidden;
   width: 100%;
   bottom: 0;
-  padding: 0px 20px 10px;
+  padding: 0px 19px 10px;
 }
 .product__btn-wrap:before,
 .product__btn-wrap:after {
@@ -2518,7 +2520,7 @@ input.search {
   fill: #AA66AA;
 }
 .product__liked svg {
-  width: 16px;
+  width: 17px;
   height: 14px;
   position: relative;
   top: 2px;
@@ -4157,6 +4159,9 @@ label.color span {
   display: block;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 .history__number {
   -webkit-flex-basis: 51px;
