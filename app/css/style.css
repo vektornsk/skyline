@@ -4129,6 +4129,18 @@ label.color span {
 .liked-wrap .product__addcurt .cart-add-ico {
   left: 5px;
 }
+.liked-wrap .product__more {
+  position: absolute;
+  bottom: 0px;
+  z-index: 2;
+  padding: 0 8px;
+}
+.liked-wrap .product__more .more-ico {
+  left: 5px;
+}
+.liked-wrap .product__more span {
+  padding-left: 20px;
+}
 /* page History
 ================================================================================*/
 .history__item {
