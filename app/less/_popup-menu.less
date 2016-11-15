@@ -99,6 +99,13 @@
   }
 }
 .in-cart {
+  overflow: hidden;
+  padding-right: 10px;
+  overflow-y: auto;
+  max-height: 450px;
+  @media (max-height: 767px) {
+    max-height: 350px;
+  }
   &__item {
     display: flex;
     align-items: center;

@@ -1413,6 +1413,17 @@ nav .left {
 .popup-cart .btn {
   width: 100%;
 }
+.in-cart {
+  overflow: hidden;
+  padding-right: 10px;
+  overflow-y: auto;
+  max-height: 450px;
+}
+@media (max-height: 767px) {
+  .in-cart {
+    max-height: 350px;
+  }
+}
 .in-cart__item {
   display: -webkit-box;
   display: -webkit-flex;
