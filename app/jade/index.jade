@@ -10,54 +10,111 @@ block content
 		+carousel
 		+info-box		
 		.container
-			.card-index-layout 
-				.card-index__row_one
-					a.card-index(href="#")
-						img.card-index__img(src="/images/legs-1.png", alt="")
-						.card-index__title.card-index__title_yellow Хит продаж
-						.card-index__block.card-index__block_black
-							.card-index__name Классические колготки
-							.card-index__category Выбор покупателей
-							.card-index__tip Новинки
-					a.card-index(href="#")
-						img.card-index__img(src="/images/legs-2.png", alt="")
-						.card-index__title.card-index__title_pink Выбор покупателей
-						.card-index__block.card-index__block_black
-							.card-index__name Корсетное Белье
-							.card-index__category Новая коллекция
-							.card-index__tip На любой вкус
-					a.card-index(href="#")
-						img.card-index__img(src="/images/legs-3.png", alt="")
-						.card-index__title.card-index__title_green Бестселлер
-						.card-index__block.card-index__block_black
-							.card-index__name Трикотаж
-							.card-index__category Новая коллекция
-							.card-index__tip Ведущие бренды
-					a.card-index(href="#")
-						img.card-index__img(src="/images/conit.png", alt="")
-						.card-index__label Conit
-						.card-index__block						
-							.card-index__category.card-index__category_font Новое поступление
-							.card-index__tip Привлекательные цены
-				.card-index__row_two
-					a.card-index.card-index_big(href="#")
-						img.card-index__img(src="/images/legs.png", alt="")
-						.card-index__title.card-index__title_yellow Распродажа
-						.card-index__block.card-index__block_black
-							.card-index__name Большая распродажа женского белья
-							.card-index__category Время акции строго ограничено!
-							.card-index__tip успей оформить заказ со скидкой
-					a.card-index(href="#")
-						img.card-index__img(src="/images/fildoro.png", alt="")
-						.card-index__label Filodoro
-						.card-index__block						
-							.card-index__category.card-index__category_font Новое поступление
-							.card-index__tip Привлекательные цены
-					a.card-index(href="#")
-						img.card-index__img(src="/images/golden-lady.png", alt="")
-						.card-index__label Golden Lady
-						.card-index__block						
-							.card-index__category.card-index__category_font Новое поступление
-							.card-index__tip Привлекательные цены
+			//- .card-index-layout 
+			//- 	.card-index__row_one
+			//- 		a.card-index(href="#")
+			//- 			img.card-index__img(src="/images/legs-1.png", alt="")
+			//- 			.card-index__title.card-index__title_yellow Хит продаж
+			//- 			.card-index__block.card-index__block_black
+			//- 				.card-index__name Классические колготки
+			//- 				.card-index__category Выбор покупателей
+			//- 				.card-index__tip Новинки
+			//- 		a.card-index(href="#")
+			//- 			img.card-index__img(src="/images/legs-2.png", alt="")
+			//- 			.card-index__title.card-index__title_pink Выбор покупателей
+			//- 			.card-index__block.card-index__block_black
+			//- 				.card-index__name Корсетное Белье
+			//- 				.card-index__category Новая коллекция
+			//- 				.card-index__tip На любой вкус
+			//- 		a.card-index(href="#")
+			//- 			img.card-index__img(src="/images/legs-3.png", alt="")
+			//- 			.card-index__title.card-index__title_green Бестселлер
+			//- 			.card-index__block.card-index__block_black
+			//- 				.card-index__name Трикотаж
+			//- 				.card-index__category Новая коллекция
+			//- 				.card-index__tip Ведущие бренды
+			//- 		a.card-index(href="#")
+			//- 			img.card-index__img(src="/images/conit.png", alt="")
+			//- 			.card-index__label Conit
+			//- 			.card-index__block						
+			//- 				.card-index__category.card-index__category_font Новое поступление
+			//- 				.card-index__tip Привлекательные цены
+			//- 	.card-index__row_two
+			//- 		a.card-index.card-index_big(href="#")
+			//- 			img.card-index__img(src="/images/legs.png", alt="")
+			//- 			.card-index__title.card-index__title_yellow Распродажа
+			//- 			.card-index__block.card-index__block_black
+			//- 				.card-index__name Большая распродажа женского белья
+			//- 				.card-index__category Время акции строго ограничено!
+			//- 				.card-index__tip успей оформить заказ со скидкой
+			//- 		a.card-index(href="#")
+			//- 			img.card-index__img(src="/images/fildoro.png", alt="")
+			//- 			.card-index__label Filodoro
+			//- 			.card-index__block						
+			//- 				.card-index__category.card-index__category_font Новое поступление
+			//- 				.card-index__tip Привлекательные цены
+			//- 		a.card-index(href="#")
+			//- 			img.card-index__img(src="/images/golden-lady.png", alt="")
+			//- 			.card-index__label Golden Lady
+			//- 			.card-index__block						
+			//- 				.card-index__category.card-index__category_font Новое поступление
+			//- 				.card-index__tip Привлекательные цены
+			.b-banners
+				ul.b-banners__list
+					li.b-banners__item
+						a.b-banners__item-inner(href="#")
+							img.b-banners__item-img(src="/images/legs-1.png", alt="")
+							.b-banners__item-metka.b-banners__item-metka--yellow Хит продаж
+							.b-banners__item-block.b-banners__item-block--black
+								.b-banners__item-name Классические колготки
+								.b-banners__item-category Выбор покупателей
+								.b-banners__item-tip Новинки
+					li.b-banners__item
+						a.b-banners__item-inner(href="#")
+							img.card-index__img(src="/images/legs-2.png", alt="")
+							.b-banners__item-metka.b-banners__item-metka--pink Выбор покупателей
+							.b-banners__item-block.b-banners__item-block--black
+								.b-banners__item-name Корсетное Белье
+								.b-banners__item-category Новая коллекция
+								.b-banners__item-tip На любой вкус
+					li.b-banners__item
+						a.b-banners__item-inner(href="#")
+							img.b-banners__item-img(src="/images/legs-3.png", alt="")
+							.b-banners__item-metka.b-banners__item-metka--green Бестселлер
+							.b-banners__item-block.b-banners__item-block--black
+								.b-banners__item-name Трикотаж
+								.b-banners__item-category Новая коллекция
+								.b-banners__item-tip Ведущие бренды
+					li.b-banners__item
+						a.b-banners__item-inner(href="#")
+							img.b-banners__item-img(src="/images/conit.png", alt="")
+							.b-banners__item-label Conit
+							.b-banners__item-block
+								.b-banners__item-category Новое поступление
+								.b-banners__item-tip Привлекательные цены
+					li.b-banners__item.b-banners__item--x2
+						a.b-banners__item-inner(href="#")
+							img.b-banners__item-img(src="/images/legs.png", alt="")
+							.b-banners__item-metka.b-banners__item-metka--yellow Распродажа
+							.b-banners__item-block.b-banners__item-block--black
+								.b-banners__item-name Большая распродажа женского белья
+								.b-banners__item-category Время акции строго ограничено!
+								.b-banners__item-tip успей оформить заказ со скидкой
+					li.b-banners__item
+						a.b-banners__item-inner(href="#")
+							img.b-banners__item-img(src="/images/fildoro.png", alt="")
+							.b-banners__item-label Filodoro
+							.b-banners__item-block
+								.b-banners__item-category Новое поступление
+								.b-banners__item-tip Привлекательные цены
+					li.b-banners__item
+						a.b-banners__item-inner(href="#")
+							img.b-banners__item-img(src="/images/golden-lady.png", alt="")
+							.b-banners__item-label Golden Lady
+							.b-banners__item-block 
+								.b-banners__item-category Новое поступление
+								.b-banners__item-tip Привлекательные цены
+					br.clear
+
 		+brands
 block hidden

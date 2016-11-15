@@ -9,7 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/normalize-4.1.1.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/libs-style.css">
+    <link rel="stylesheet" href="../css/libs/slick.css">
+    <link rel="stylesheet" href="../css/libs/sumoselect.css">
+    <link rel="stylesheet" href="../css/libs/jquery.fancybox.css">
+    <link rel="stylesheet" href="../css/libs/jquery.fancybox-thumbs.css">
+    <link rel="stylesheet" href="../css/libs/jquery.fancybox-buttons.css">
     <link rel="stylesheet" href="../css/style.css"><!--[if lt IE 9]>
     <script src='../js/html5shiv.js'></script>
     <script src='../js/respond-1.4.2.min.js'></script>
@@ -314,48 +318,55 @@
           </div>
         </section>
         <div class="container">
-          <div class="card-index-layout"> 
-            <div class="card-index__row_one"><a href="#" class="card-index"><img src="/images/legs-1.png" alt="" class="card-index__img">
-                <div class="card-index__title card-index__title_yellow">Хит продаж</div>
-                <div class="card-index__block card-index__block_black">
-                  <div class="card-index__name">Классические колготки</div>
-                  <div class="card-index__category">Выбор покупателей</div>
-                  <div class="card-index__tip">Новинки</div>
-                </div></a><a href="#" class="card-index"><img src="/images/legs-2.png" alt="" class="card-index__img">
-                <div class="card-index__title card-index__title_pink">Выбор покупателей</div>
-                <div class="card-index__block card-index__block_black">
-                  <div class="card-index__name">Корсетное Белье</div>
-                  <div class="card-index__category">Новая коллекция</div>
-                  <div class="card-index__tip">На любой вкус</div>
-                </div></a><a href="#" class="card-index"><img src="/images/legs-3.png" alt="" class="card-index__img">
-                <div class="card-index__title card-index__title_green">Бестселлер</div>
-                <div class="card-index__block card-index__block_black">
-                  <div class="card-index__name">Трикотаж</div>
-                  <div class="card-index__category">Новая коллекция</div>
-                  <div class="card-index__tip">Ведущие бренды</div>
-                </div></a><a href="#" class="card-index"><img src="/images/conit.png" alt="" class="card-index__img">
-                <div class="card-index__label">Conit</div>
-                <div class="card-index__block">						
-                  <div class="card-index__category card-index__category_font">Новое поступление</div>
-                  <div class="card-index__tip">Привлекательные цены</div>
-                </div></a></div>
-            <div class="card-index__row_two"><a href="#" class="card-index card-index_big"><img src="/images/legs.png" alt="" class="card-index__img">
-                <div class="card-index__title card-index__title_yellow">Распродажа</div>
-                <div class="card-index__block card-index__block_black">
-                  <div class="card-index__name">Большая распродажа женского белья</div>
-                  <div class="card-index__category">Время акции строго ограничено!</div>
-                  <div class="card-index__tip">успей оформить заказ со скидкой</div>
-                </div></a><a href="#" class="card-index"><img src="/images/fildoro.png" alt="" class="card-index__img">
-                <div class="card-index__label">Filodoro</div>
-                <div class="card-index__block">						
-                  <div class="card-index__category card-index__category_font">Новое поступление</div>
-                  <div class="card-index__tip">Привлекательные цены</div>
-                </div></a><a href="#" class="card-index"><img src="/images/golden-lady.png" alt="" class="card-index__img">
-                <div class="card-index__label">Golden Lady</div>
-                <div class="card-index__block">						
-                  <div class="card-index__category card-index__category_font">Новое поступление</div>
-                  <div class="card-index__tip">Привлекательные цены</div>
-                </div></a></div>
+          <div class="b-banners">
+            <ul class="b-banners__list">
+              <li class="b-banners__item"><a href="#" class="b-banners__item-inner"><img src="/images/legs-1.png" alt="" class="b-banners__item-img">
+                  <div class="b-banners__item-metka b-banners__item-metka--yellow">Хит продаж</div>
+                  <div class="b-banners__item-block b-banners__item-block--black">
+                    <div class="b-banners__item-name">Классические колготки</div>
+                    <div class="b-banners__item-category">Выбор покупателей</div>
+                    <div class="b-banners__item-tip">Новинки</div>
+                  </div></a></li>
+              <li class="b-banners__item"><a href="#" class="b-banners__item-inner"><img src="/images/legs-2.png" alt="" class="card-index__img">
+                  <div class="b-banners__item-metka b-banners__item-metka--pink">Выбор покупателей</div>
+                  <div class="b-banners__item-block b-banners__item-block--black">
+                    <div class="b-banners__item-name">Корсетное Белье</div>
+                    <div class="b-banners__item-category">Новая коллекция</div>
+                    <div class="b-banners__item-tip">На любой вкус</div>
+                  </div></a></li>
+              <li class="b-banners__item"><a href="#" class="b-banners__item-inner"><img src="/images/legs-3.png" alt="" class="b-banners__item-img">
+                  <div class="b-banners__item-metka b-banners__item-metka--green">Бестселлер</div>
+                  <div class="b-banners__item-block b-banners__item-block--black">
+                    <div class="b-banners__item-name">Трикотаж</div>
+                    <div class="b-banners__item-category">Новая коллекция</div>
+                    <div class="b-banners__item-tip">Ведущие бренды</div>
+                  </div></a></li>
+              <li class="b-banners__item"><a href="#" class="b-banners__item-inner"><img src="/images/conit.png" alt="" class="b-banners__item-img">
+                  <div class="b-banners__item-label">Conit</div>
+                  <div class="b-banners__item-block">
+                    <div class="b-banners__item-category">Новое поступление</div>
+                    <div class="b-banners__item-tip">Привлекательные цены</div>
+                  </div></a></li>
+              <li class="b-banners__item b-banners__item--x2"><a href="#" class="b-banners__item-inner"><img src="/images/legs.png" alt="" class="b-banners__item-img">
+                  <div class="b-banners__item-metka b-banners__item-metka--yellow">Распродажа</div>
+                  <div class="b-banners__item-block b-banners__item-block--black">
+                    <div class="b-banners__item-name">Большая распродажа женского белья</div>
+                    <div class="b-banners__item-category">Время акции строго ограничено!</div>
+                    <div class="b-banners__item-tip">успей оформить заказ со скидкой</div>
+                  </div></a></li>
+              <li class="b-banners__item"><a href="#" class="b-banners__item-inner"><img src="/images/fildoro.png" alt="" class="b-banners__item-img">
+                  <div class="b-banners__item-label">Filodoro</div>
+                  <div class="b-banners__item-block">
+                    <div class="b-banners__item-category">Новое поступление</div>
+                    <div class="b-banners__item-tip">Привлекательные цены</div>
+                  </div></a></li>
+              <li class="b-banners__item"><a href="#" class="b-banners__item-inner"><img src="/images/golden-lady.png" alt="" class="b-banners__item-img">
+                  <div class="b-banners__item-label">Golden Lady</div>
+                  <div class="b-banners__item-block"> 
+                    <div class="b-banners__item-category">Новое поступление</div>
+                    <div class="b-banners__item-tip">Привлекательные цены</div>
+                  </div></a></li><br class="clear">
+            </ul>
           </div>
         </div>
         <section class="brands-wrap">
@@ -421,7 +432,13 @@
     <div class="hidden">
     </div>
     <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&amp;lang=ru-RU" type="text/javascript"></script>
-    <script src="../js/libs.js"></script>
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/slick.min.js"></script>
+    <script src="../js/libs/jquery.sumoselect.js"></script>
+    <script src="../js/libs/jquery.fancybox.pack.js"></script>
+    <script src="../js/libs/jquery.fancybox-thumbs.js"></script>
+    <script src="../js/libs/jquery.fancybox-buttons.js"></script>
+    <script src="../js/libs/jquery.fancybox-media.js"></script>
     <script src="../js/main.js"></script>
   </body>
 </html>
