@@ -577,6 +577,18 @@ cite span,
 .checkbox input[type="checkbox"]:checked + span:before {
   background-position: 0 -16px;
 }
+.checkbox .color {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  position: absolute;
+  top: 1px;
+  left: 15px;
+}
+.checkbox .color + input + span {
+  margin-left: 15px !important;
+}
 .checkbox span {
   margin-left: 15px;
 }
