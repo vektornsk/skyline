@@ -39,6 +39,7 @@ gulp.task('jade', function(){
 gulp.task('scripts', function(){
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/jquery-ui/jquery-ui.min.js',
 		'app/libs/slick-carousel/slick/slick.min.js',
 		'app/libs/sumoselect/jquery.sumoselect.js',
 		'app/libs/fancyBox/source/jquery.fancybox.pack.js',
@@ -53,6 +54,7 @@ gulp.task('scripts', function(){
 // CSS
 gulp.task('libcss', function(){
 	return gulp.src([
+		'app/libs/jquery-ui/themes/base/jquery-ui.css',		
 		'app/libs/slick-carousel/slick/slick.css',
 		'app/libs/sumoselect/sumoselect.css',
 		'app/libs/fancyBox/source/jquery.fancybox.css',

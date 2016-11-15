@@ -140,11 +140,11 @@ $('.select-check').SumoSelect({
 
 
 	/* value price*/
-	$('#value').ionRangeSlider({
-		type: "double",
-		min: 10,
-		max: 5000,
-	});
+	// $('#value').ionRangeSlider({
+	// 	type: "double",
+	// 	min: 10,
+	// 	max: 5000,
+	// });
 
 	/* long txt */
 	function cutLongString(element, count_lit){

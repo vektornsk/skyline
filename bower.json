@@ -21,6 +21,7 @@
     "slick-carousel": "^1.6.0",
     "ion.rangeSlider": "ionrangeslider#^2.1.4",
     "sumoselect": "^3.0.2",
-    "fancyBox": "^2.1.5"
+    "fancyBox": "^2.1.5",
+    "jquery-ui": "^1.12.1"
   }
 }
