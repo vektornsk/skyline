@@ -1173,6 +1173,11 @@ nav .left {
 .menu__item:hover .menu-sub {
   display: block;
 }
+@media (max-width: 991px) {
+  .menu__item:hover .menu-sub {
+    display: none;
+  }
+}
 .menu__title {
   position: relative;
   height: 30px;
@@ -1186,6 +1191,11 @@ nav .left {
   text-transform: uppercase;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+@media (max-width: 991px) {
+  .menu__title {
+    width: 100%;
+  }
 }
 .menu__title.active {
   background: #a6a;
@@ -1213,6 +1223,11 @@ nav .left {
   background: url(../images/arrow-menu.png) no-repeat;
   top: 4px;
   right: -20px;
+}
+@media (max-width: 991px) {
+  .menu__title span:after {
+    content: none;
+  }
 }
 .menu-sub {
   background: #fff;

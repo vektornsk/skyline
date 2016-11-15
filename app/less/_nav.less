@@ -24,6 +24,9 @@ nav {
       &:hover {
         .menu-sub {
           display: block;
+          @media (max-width: 991px) {
+            display: none;
+          }
         }
       }
     }
@@ -39,6 +42,9 @@ nav {
       line-height: 30px;
       text-transform: uppercase;
       transition: all 0.3s;
+      @media (max-width: 991px) {
+        width: 100%;
+      }
       &.active {
         background: #a6a;
         color: #fff;
@@ -68,6 +74,9 @@ nav {
             background: url(../images/arrow-menu.png) no-repeat;
             top: 4px;
             right: -20px;
+            @media (max-width: 991px) {
+              content: none;
+            }
           }
         }
     }
