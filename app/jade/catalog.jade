@@ -38,7 +38,9 @@ block content
 								.range-wrap
 									.range
 									label Цена (Руб.):
-									input(type="text", id="value", name="value-price", value="", readonly)
+									span.value
+									input(type="text", id="min-value", name="value-price", value="", readonly)
+									input(type="text", id="max-value", name="value-price", value="", readonly)
 						.filter-group
 							.filter-group__title Бренды
 							.filter-group__inner

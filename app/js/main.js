@@ -146,11 +146,16 @@ $('.select-check').SumoSelect({
 	    max: 4500,
 	    values: [ 500, 2300 ],
 			slide: function( event, ui ) {
-        $( "#value" ).val( ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+        $("#min-value").val( ui.values[ 0 ]);
+				$("#max-value").val(ui.values[ 1 ]);
+				$(".value").text($( ".range" ).slider( "values", 0 ) +
+		       " - " + $( ".range" ).slider( "values", 1 ));
       }
 	 });
-	 $( "#value" ).val( $( ".range" ).slider( "values", 0 ) +
-      " - " + $( ".range" ).slider( "values", 1 ) );
+	 $( "#min-value" ).val( $( ".range" ).slider( "values", 0 ) );
+	 $( "#max-value" ).val( $( ".range" ).slider( "values", 1 ) );
+	 $(".value").text($( ".range" ).slider( "values", 0 ) +
+      " - " + $( ".range" ).slider( "values", 1 ));
 
 
 

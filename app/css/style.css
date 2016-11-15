@@ -609,12 +609,10 @@ cite span,
   color: #222;
 }
 .range-wrap input[type="text"] {
-  display: inline-block;
-  width: auto;
-  margin: 0;
-  padding: 0;
+  display: none;
+}
+.range-wrap .value {
   padding-left: 10px;
-  height: 22px;
 }
 .range-wrap .ui-corner-all {
   -webkit-border-radius: 0;
@@ -661,7 +659,7 @@ cite span,
   vertical-align: middle;
 }
 .pay__item {
-  display: inline-block;
+  display: inline-block !important;
   vertical-align: middle;
   width: 72px;
   height: 60px;
@@ -707,7 +705,7 @@ cite span,
   vertical-align: middle;
 }
 .tk__item {
-  display: inline-block;
+  display: inline-block !important;
   vertical-align: middle;
   width: 72px;
   height: 60px;
@@ -4091,6 +4089,13 @@ label.color span {
     -ms-flex-preferred-size: 177px;
     flex-basis: 177px;
   }
+}
+.cart-item_more {
+  text-transform: none;
+}
+.cart-item_more span {
+  color: #737373;
+  text-transform: uppercase;
 }
 .cart-item_price-one {
   -webkit-flex-basis: 117px;
