@@ -140,11 +140,19 @@ $('.select-check').SumoSelect({
 
 
 	/* value price*/
-	// $('#value').ionRangeSlider({
-	// 	type: "double",
-	// 	min: 10,
-	// 	max: 5000,
-	// });
+	 $('.range').slider({
+			range: true,
+	    min: 0,
+	    max: 4500,
+	    values: [ 500, 2300 ],
+			slide: function( event, ui ) {
+        $( "#value" ).val( ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+      }
+	 });
+	 $( "#value" ).val( $( ".range" ).slider( "values", 0 ) +
+      " - " + $( ".range" ).slider( "values", 1 ) );
+
+
 
 	/* long txt */
 	function cutLongString(element, count_lit){

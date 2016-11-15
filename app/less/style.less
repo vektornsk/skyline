@@ -447,41 +447,60 @@ cite,.cite {
 /* value price
 ================================================================================*/
 
-.irs-line-mid,
-.irs-line-left,
-.irs-line-right,
-.irs-bar,
-.irs-bar-edge,
-.irs-slider {
-    background: url(../images/sprite-skin-flat.png) repeat-x;
+.range-wrap {
+	padding-top: 15px;
+	.range {
+		margin-bottom: 20px;
+	}
+
+	label {
+		display: inline-block;
+		font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 1;
+    text-transform: uppercase;
+		color: #222;
+	}
+
+	input[type="text"] {
+		display: inline-block;
+		width: auto;
+		margin: 0;
+		padding: 0;
+		padding-left: 10px;
+		height: 22px;
+	}
+
+	/*range slider*/
+	.ui-corner-all {
+		border-radius: 0;
+	}
+	.ui-widget-header {
+		background-color: #a6a;
+	}
+	.ui-slider-horizontal {
+		height: 2px;
+	}
+	.ui-slider-horizontal .ui-slider-handle {
+		margin-left: 0;
+	}
+	.ui-widget.ui-widget-content {
+		border: none;
+		background-color: #959595;
+	}
+	.ui-slider .ui-slider-handle {
+		width: 4px;
+		height: 14px;
+		background-color: #a6a;
+		top: -6px;
+	}
+	.ui-state-default, .ui-widget-content .ui-state-default {
+		border: none;
+	}
 }
-.irs-line {
-	height: 2px;
-	top: 30px;
-}
-.irs-bar {
-    height: 2px;
-    top: 30px;
-    background-position: 0 -60px;
-}
-.irs-bar-edge {
-    top: 25px;
-    height: 12px;
-    width: 9px;
-    background-position: 0 -90px;
-}
-.irs-slider {
-    width: 16px;
-    height: 18px;
-    top: 22px;
-    background-position: 0 -120px;
-}
-.irs-from, .irs-to, .irs-single {
-	background: #a6a;
-}
-.irs-from:after, .irs-to:after, .irs-single:after {
-  border-top-color: #a6a;
-}
+
+
 /* mixin color*/
 .pink {
 	color: #a6a;
@@ -489,6 +508,7 @@ cite,.cite {
 .gray {
 	color: #757575
 }
+
 /*pay order*/
 .pay {
 	font-size: 12px;
