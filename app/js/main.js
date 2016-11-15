@@ -200,6 +200,7 @@ $('.select-check').SumoSelect({
 			var img = $(this).children().attr('src');
 			var imgBig = $('.card-img__big').attr('src');
 			$(this).parents('.card-img').find('.card-img__big').attr('src', img);
+			$(this).parents('.card-img').find('.popup-img').attr('href', img);
 			$(this).children().attr('src', imgBig);
 		},
 		function() {
