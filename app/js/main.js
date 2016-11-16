@@ -160,7 +160,7 @@ $('.select-check').SumoSelect({
 
 
 	/* long txt */
-	function cutLongString(element, count_lit){
+	/*function cutLongString(element, count_lit){
 
 		element.each(function(i, elem){
 			if ($(elem).html().length > count_lit){
@@ -173,7 +173,7 @@ $('.select-check').SumoSelect({
 	cutLongString($('.news__title'), 69);
 	cutLongString($('.news__txt'), 180);
 	cutLongString($('.product__name'), 40);
-	cutLongString($('.review__name'), 47);
+	cutLongString($('.review__name'), 47);*/
 
 	/* menu - cabinet */
 
