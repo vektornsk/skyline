@@ -579,15 +579,15 @@ cite span,
 }
 .checkbox .color {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   margin: 0 5px;
   position: absolute;
-  top: 1px;
+  top: -2px;
   left: 15px;
 }
 .checkbox .color + input + span {
-  margin-left: 15px !important;
+  margin-left: 18px !important;
 }
 .checkbox span {
   margin-left: 15px;
