@@ -1471,6 +1471,13 @@ nav .left {
   letter-spacing: 0.1px;
   text-transform: uppercase;
 }
+.in-cart__more {
+  text-transform: none;
+}
+.in-cart__more span {
+  color: #a6a6a6;
+  text-transform: uppercase;
+}
 .in-cart__col {
   color: #a6a6a6;
   font-size: 12px;
