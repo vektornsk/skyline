@@ -224,16 +224,16 @@ $('.select-check').SumoSelect({
 		e.preventDefault();
 	});
 
-	/* TK */
-
-	$('.sumo_city').click('click', function(){
-		var selectTitle = $(this).children('p').attr('title');
-		var tk = ' Транспортная компания';
-		if(selectTitle === tk) {
-			$('.order__tk').show();
-		} else {
-			$('.order__tk').hide();
-		}
-	});
+	// /* TK */
+	//
+	// $('.sumo_city').click('click', function(){
+	// 	var selectTitle = $(this).children('p').attr('title');
+	// 	var tk = ' Транспортная компания';
+	// 	if(selectTitle === tk) {
+	// 		$('.order__tk').show();
+	// 	} else {
+	// 		$('.order__tk').hide();
+	// 	}
+	// });
 
 }); /* end $*/
