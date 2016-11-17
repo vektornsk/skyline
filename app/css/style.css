@@ -148,8 +148,8 @@ input[type="search"]::-webkit-search-decoration {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   #wrapper {
-    min-height: -webkit-calc(100vh - 160px);
-    min-height: calc(100vh - 160px);
+    min-height: -webkit-calc(100vh - 125px);
+    min-height: calc(100vh - 125px);
   }
 }
 .wrap-top {
@@ -224,6 +224,7 @@ input[type="search"]::-webkit-search-decoration {
   float: right;
 }
 a {
+  color: #a6a;
   -webkit-transition: color .3s;
   transition: color .3s;
 }
@@ -1963,6 +1964,11 @@ nav .left {
     padding: 10px;
   }
 }
+@media screen and (max-width: 330px) {
+  .b-banners {
+    margin-left: -5px;
+  }
+}
 br.clear {
   clear: both;
 }
@@ -3368,6 +3374,7 @@ label.color span {
   .card-wrap h1 {
     color: #83a25c;
     font-size: 21px;
+    margin-top: 0;
   }
 }
 .card__left {
@@ -4441,6 +4448,116 @@ label.color span {
     right: 11px;
   }
 }
+/* authorization
+================================================================================*/
+.authorization {
+  border: 1px solid #eaeaea;
+  text-align: center;
+}
+@media (min-width: 320px) {
+  .authorization {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 479px) {
+  .authorization {
+    width: 80%;
+    padding-top: 35px;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 767px) {
+  .authorization {
+    padding-top: 45px;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 1023px) {
+  .authorization {
+    width: 65%;
+  }
+}
+.authorization form {
+  width: 265px;
+  margin: 0 auto;
+}
+@media (max-width: 479px) {
+  .authorization form {
+    width: 260px;
+  }
+}
+.authorization label {
+  font-size: 12px;
+  color: #737373;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  line-height: 1;
+  text-align: left;
+}
+.authorization input:not(.btn) {
+  width: 100%;
+  display: block;
+  background: #f6f6f6;
+  color: #222;
+}
+.authorization input.btn {
+  width: 100%;
+  margin-bottom: 60px;
+}
+@media (max-width: 479px) {
+  .authorization input.btn {
+    margin-bottom: 40px;
+  }
+}
+.authorization a.reset {
+  color: #222;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+}
+.authorization a.reset:hover {
+  color: #ecaa2d;
+}
+.title-form {
+  text-align: center;
+  color: #222;
+  letter-spacing: 0.1px;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .title-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+  }
+}
+@media (max-width: 479px) {
+  .title-form {
+    margin-bottom: 30px;
+  }
+}
+.title-form span {
+  font-size: 20px;
+  letter-spacing: 0.18px;
+}
+@media (max-width: 479px) {
+  .title-form span {
+    font-size: 18px;
+  }
+}
+.title-form a {
+  font-weight: 500;
+}
+/* registration
+--------------------------------------------------------------------------------*/
+/* reset
+--------------------------------------------------------------------------------*/
 /* @MEDIA */
 /*                           320-991 index
 ================================================================================*/

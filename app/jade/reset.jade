@@ -1,0 +1,23 @@
+extends ./tmp/_template.jade
+include ./tmp/_bread-crumbs.jade
+
+block title
+	title Восстановление пароля
+block content
+	.wrap-top
+		.container.content-wrap
+			.content-top
+				+bread
+			h1 Восстановление пароля
+			.authorization
+				.title-form <span>Забыли пароль?</span>
+				form
+					label Введите (номер телефона или email)
+						input(type="text" value="" placeholder="Номер телефона или email" name="login")
+					.btn-submit
+						input.btn(type="submit" value="Отправить")
+				a.reset(href="#") Авторизация
+				
+			.content-bottom						
+
+block hidden

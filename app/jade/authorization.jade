@@ -1,0 +1,27 @@
+extends ./tmp/_template.jade
+include ./tmp/_bread-crumbs.jade
+
+block title
+	title Авторизация
+block content
+	.wrap-top
+		.container.content-wrap
+			.content-top
+				+bread
+			h1 Авторизация
+			.authorization
+				.title-form <span>Войдите на сайт</span> или
+					| 
+					a(href="#") Зарегистрируйтесь
+				form
+					label Логин
+						input(type="text" value="" placeholder="E-mail или телефон" name="login")
+					label Пароль
+						input(type="text" value="" placeholder="Введите пароль" name="password")
+					.btn-submit
+						input.btn(type="submit" value="Войти")
+				a.reset(href="#") Забыли пароль?
+				
+			.content-bottom						
+
+block hidden
