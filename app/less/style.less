@@ -744,6 +744,14 @@ cite,.cite {
 	background: #fff;
 	padding: 0 36px 0 20px;
 	cursor: pointer;
+	&.open {
+		label {
+			i {
+				border-width: 0 4px 6px 4px;
+				border-color: transparent transparent #222 transparent;
+			}
+		}
+	}
 	&.open + .option-box {
 			display: block;
 		}
