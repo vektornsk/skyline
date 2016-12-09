@@ -788,10 +788,19 @@ cite span,
   border-right: 1px solid #efefef;
 }
 .btn-calc__left input {
-  opacity: 0;
+  opacity: 1;
+  background: transparent !important;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  line-height: 1;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center;
 }
-.btn-calc__left span {
-  display: inline-block;
+.btn-calc__left span,
+.btn-calc__left input {
+  display: inline-block !important;
   position: absolute;
   z-index: 1;
   top: 50%;

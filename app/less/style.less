@@ -624,10 +624,18 @@ cite,.cite {
 		position: relative;
 		border-right: 1px solid #efefef;
 			input {
-				opacity: 0;
+				opacity: 1;
+		    background: transparent !important;
+				font-size: 12px;
+		    font-weight: 400;
+		    letter-spacing: 0.1px;
+		    line-height: 1;
+				margin: 0 !important;
+				padding: 0 !important;
+				text-align: center;
 			}
-			span {
-				display: inline-block;
+			span, input {
+				display: inline-block !important;
 				position: absolute;
 				z-index: 1;
 				top: 50%;
