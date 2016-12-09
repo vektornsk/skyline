@@ -25,12 +25,22 @@ block content
 							.card-setting
 								.card-setting__left
 									.card-setting-top
-										select.select.select(placeholder="Выбрать размер:")
-											option
-											option(value="1") Размер: 6
-											option(value="2") Размер: 12
-											option(value="3") Размер: 18
-											option(value="4") Размер: 24
+										//- select.select.select(placeholder="Выбрать размер:")
+										//- 	option
+										//- 	option(value="1") Размер: 6
+										//- 	option(value="2") Размер: 12
+										//- 	option(value="3") Размер: 18
+										//- 	option(value="4") Размер: 24
+										.select-wrap
+											.select-box
+												span Выбрать размер:
+												label
+													i
+											ul.option-box
+												li Размер: 6
+												li Размер: 12
+												li Размер: 18
+												li Размер: 24
 										a.tbl-size.popup-img(href="/images/size.jpg") Таблица размеров
 
 									select.select(placeholder="Плотность: 20 ден")

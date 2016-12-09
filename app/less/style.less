@@ -724,6 +724,104 @@ cite,.cite {
 	background: #fff;
 }
 
+.select-wrap {
+	width: 100%;
+	position: relative;
+}
+.select-box {
+	position: relative;
+	width: inherit;
+	border: 1px solid #efefef;
+  height: 42px;
+	background: #fff;
+	padding: 0 36px 0 20px;
+	cursor: pointer;
+	&.open + .option-box {
+			display: block;
+		}
+	span {
+		line-height: 42px;
+		text-transform: uppercase;
+		color: #222;
+		text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+	}
+	label {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 30px;
+		border-left: 1px solid #efefef;
+		cursor: pointer;
+		i {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			opacity: 0.8;
+			display: inline-block;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 6px 4px 0 4px;
+			border-color: #222 transparent transparent transparent;
+		}
+	}
+}
+.option-box {
+	display: none;
+	position: absolute;
+	background: #f7f7f7;
+	z-index: 9;
+	border: 1px solid #efefef;
+	border-top: 0;
+	border-bottom: 0;
+	width: inherit;
+	li {
+		cursor: pointer;
+		padding: 0 10px;
+		line-height: 33px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		border-bottom: 1px solid #efefef;
+		text-transform: uppercase;
+		color: #222;
+		&:hover {
+			background: #ecaa2d;
+			color: #fff;
+		}
+	}
+}
+
+/* Styly pravka-bitrix*/
+bx-core-window label {
+  color: #000;
+  display: inline;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+}
+.catalog__right h1 {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.2px;
+  margin-bottom: 25px;
+}
+.menu-catalog__resul {
+  padding-top: 15px;
+}
+.filter-popup-submit {
+  display: none;
+}
+
 /* Include Style
 ================================================================================*/
 
