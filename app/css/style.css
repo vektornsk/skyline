@@ -3135,10 +3135,14 @@ label.color span {
   display: block;
   cursor: pointer;
 }
+.filter .checkbox input[type="checkbox"],
+.filter-group .checkbox input[type="checkbox"] {
+  display: none !important;
+}
 .filter .checkbox span,
 .filter-group .checkbox span {
   margin-left: 0;
-  padding-left: 15px;
+  padding-left: 25px;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.1px;
@@ -3146,6 +3150,7 @@ label.color span {
   text-transform: uppercase;
   color: #222;
   cursor: pointer;
+  display: block;
 }
 .filter-group {
   width: 100%;
